@@ -1,0 +1,16 @@
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\FileStorageContex.deps.json
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\FileStorageContex.dll
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\FileStorageContex.pdb
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\Model.dll
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\Model.pdb
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.csproj.AssemblyReference.cache
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.AssemblyInfoInputs.cache
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.AssemblyInfo.cs
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.csproj.CoreCompileInputs.cache
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.csproj.CopyComplete
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.dll
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\refint\FileStorageContex.dll
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\FileStorageContex.pdb
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\obj\Debug\net6.0\ref\FileStorageContex.dll
+C:\Users\irina.kasianova\Documents\Пробы\Monopoly_exercise\FileStorage\bin\Debug\net6.0\DbContext\pallets.json

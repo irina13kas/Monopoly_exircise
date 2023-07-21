@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L/w4tZtKM1OtpWPpd91WZ8AOuymgr0jXN2dXoiruW7GTARImYARt6GHEa4OfjLZFcNZ6RhdUsigO7FwZEZs9Iw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Console\\PrintToConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\irina.kasianova\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
