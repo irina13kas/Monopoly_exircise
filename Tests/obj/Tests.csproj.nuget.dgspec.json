@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Tests\\Tests.csproj": {}
+    "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\obj\\",
+        "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Ирина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\irina.kasianova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ирина\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }
@@ -67,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj": {
+    "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj",
+        "projectUniqueName": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
         "projectName": "FileStorageContex",
-        "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj",
-        "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\obj\\",
+        "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
+        "packagesPath": "C:\\Users\\Ирина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\irina.kasianova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ирина\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -93,15 +92,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }
@@ -137,24 +135,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj": {
+    "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\obj\\",
+        "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Ирина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ирина\\Source\\Repos\\Monopoly_exircise\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\irina.kasianova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ирина\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -163,7 +161,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -197,24 +194,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Tests\\Tests.csproj": {
+    "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Tests\\obj\\",
+        "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Ирина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\irina.kasianova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ирина\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -223,21 +220,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj"
+              "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }
@@ -289,7 +285,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

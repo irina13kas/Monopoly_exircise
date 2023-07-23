@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\irina.kasianova\\.nuget\\packages\\": {},
+    "C:\\Users\\Ирина\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\Ирина\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\Model\\obj\\",
+      "projectPath": "C:\\Users\\Ирина\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\Ирина\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ирина\\Source\\Repos\\Monopoly_exircise\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\irina.kasianova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ирина\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

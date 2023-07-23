@@ -39,7 +39,7 @@ namespace BusinessLogic
         private Dictionary<DateOnly,List<Pallet>> SortPallets()
         {
             var sortedPallets = pallets
-                .Where(x => x.ExpiryDate != null)
+                .Where(x => x.ExpiryDate!=null)
                 .GroupBy(key => key.ExpiryDate)
                 .OrderBy(x => x.Key)
                 .ToDictionary(
