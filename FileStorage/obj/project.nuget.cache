@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QdnjMtSxTPVzmFwX/H7jN3rRpcYM6KGdNgT5OAI+vvKo3XiNGMv7fr/AyRcBNs990dquS9uNM8zXQ67cAFC0mg==",
+  "dgSpecHash": "kig78xpiUaOwhZEMPNPNV9PdQK1QoSVHJK6OLEMm/nV1MaE6Euewgh5nLQT6OvmiBHtg0N1YuXhbT5xd3ar9ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irina.kasianova\\Documents\\Пробы\\Monopoly_exercise\\FileStorage\\FileStorageContex.csproj",
+  "projectFilePath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\irina.kasianova\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Ирина\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
