@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0GsqTvg23CpbmPnxjCsPNC21wgZ1WpYYFdmnnwlvt6DWtMVXOzBbkhukfSU5+zkjIHcfXdo8wkc1FbM2mYxo2g==",
+  "dgSpecHash": "MZ2KDjGARL9fVcF6IbSDz/S4xUD35x0MtOHJjEordvjVDc5c7ijjoUDbWiWHI+TOtFugM5D2avcW7RSrdMlKUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\Ирина\\source\\repos\\Monopoly_exercise\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ирина\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
