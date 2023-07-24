@@ -10,6 +10,7 @@
     }
     public ICollection<Box> Boxes { get; set; }=new List<Box>();
 
+
     public long Id { get; set; }
 
     public decimal Width { get; set; }
