@@ -10,7 +10,6 @@ namespace StorageControler
         {
             StoreDbContext db = new StoreDbContext();
             Calculation calculator= new Calculation();
-            var r = await calculator.SortPallets();
             Printer printer = new Printer();
 
             printer.PrintSortedByExpiryDatePallets(await calculator.SortPallets());

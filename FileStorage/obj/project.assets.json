@@ -1418,11 +1418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
-      "projectName": "FileStorageContex",
-      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
+      "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
+      "projectName": "DbStorageContext",
+      "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
       "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\obj\\",
+      "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1444,8 +1444,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
+            "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj"
             }
           }
         }
