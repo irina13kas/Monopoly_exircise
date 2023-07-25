@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -16,9 +17,9 @@ namespace FileStorageContext.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Width = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
-                    Height = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
-                    Depth = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false)
+                    Width = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Height = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Depth = table.Column<decimal>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,10 +32,12 @@ namespace FileStorageContext.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Width = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
-                    Height = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
-                    Depth = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
-                    Weight = table.Column<decimal>(type: "NUMERIC(8,3)", precision: 8, scale: 3, nullable: false),
+                    Width = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Height = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Depth = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Weight = table.Column<decimal>(type: "TEXT", nullable: false),
+                    DateOfProdaction = table.Column<DateOnly>(type: "TEXT", nullable: true),
+                    ExpiryDate = table.Column<DateOnly>(type: "TEXT", nullable: true),
                     PalletId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

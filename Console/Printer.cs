@@ -6,11 +6,11 @@ namespace PrintToConsole
 {
     public class Printer
     {
-        private readonly ApplicationContext db;
+        private readonly StoreDbContext db;
 
         public Printer() 
         {
-            db = new ApplicationContext();
+            db = new StoreDbContext();
         }
         public void PrintSortedByExpiryDatePallets(Dictionary<DateOnly, List<Pallet>> pallets)
         {
@@ -33,7 +33,7 @@ namespace PrintToConsole
             foreach(Pallet pallet in pallets)
             {
                 Console.WriteLine($"Паллет {pallet.Id}");
-                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)db.Pallets.Include(x=>x.Boxes).Max(y=>y.ExpiryDate)}");
+                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)pallets.Max(y => y.ExpiryDate)}");
                 foreach(Box box in pallet.Boxes)
                 {
                     Console.WriteLine($"Объем: {box.Volume}");

@@ -22,7 +22,13 @@
 
     public DateOnly? DateOfProdaction { get; set; }
 
-    public DateOnly? ExpiryDate => DateOfProdaction?.AddDays(EndOfExpirationDate);
+    private DateOnly? expiryDate;
+    public DateOnly? ExpiryDate 
+    { 
+        get=> DateOfProdaction?.AddDays(EndOfExpirationDate) ?? expiryDate;
+        set => expiryDate = value;
+    } 
+
 
     public decimal Volume => Width * Height * Depth;
 

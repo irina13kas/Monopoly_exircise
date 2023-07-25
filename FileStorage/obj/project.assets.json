@@ -1418,9 +1418,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
-      "projectName": "FileStorageContex",
-      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
+      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContext.csproj",
+      "projectName": "FileStorageContext",
+      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContext.csproj",
       "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\obj\\",
       "projectStyle": "PackageReference",

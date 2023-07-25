@@ -2,25 +2,22 @@
 
 namespace FileStorageContext
 {
-    public class ApplicationContext: DbContext
+    public class StoreDbContext: DbContext
     {
         public virtual DbSet<Pallet> Pallets => Set<Pallet>();
         public virtual DbSet<Box> Boxes => Set<Box>();
 
-        public ApplicationContext(DbContextOptions<ApplicationContext> contextOptions)
-        : base(contextOptions)
-        { }
-        public ApplicationContext()
+        //public StoreDbContext(DbContextOptions<StoreDbContext> contextOptions)
+        //: base(contextOptions)
+        //{ }
+        public StoreDbContext()
         {
             Database.EnsureDeleted();
             Database.EnsureCreated();
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
-
             optionsBuilder.UseSqlite("Data Source=Pallets.db");
         }
 

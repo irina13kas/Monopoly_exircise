@@ -8,7 +8,7 @@ namespace StorageControler
     {
         async static Task Main(string[] args)
         {
-            ApplicationContext db = new ApplicationContext();
+            StoreDbContext db = new StoreDbContext();
             Calculations calculator= new Calculations();
             var r = await calculator.SortPallets();
             Printer printer = new Printer();

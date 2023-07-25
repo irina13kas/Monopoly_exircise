@@ -29,8 +29,6 @@ namespace FileStorageContext.Configurations
                .Property(x => x.Weight)
                 .IsRequired();
 
-            builder.Ignore(x => x.DateOfProdaction);
-            builder.Ignore(x => x.ExpiryDate);
 
             builder
                 .HasOne(b => b.Pallet)
