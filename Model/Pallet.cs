@@ -1,7 +1,7 @@
 ﻿public class Pallet
 {
     private const int StartWeight = 30;
-    public Pallet(long id, decimal width, decimal height, decimal depth)
+    public Pallet(int id, decimal width, decimal height, decimal depth)
     {
         Id = id;
         Width = width;
@@ -11,7 +11,7 @@
     public ICollection<Box> Boxes { get; set; }=new List<Box>();
 
 
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     public decimal Width { get; set; }
 
@@ -19,11 +19,11 @@
 
     public decimal Depth { get; set; }
 
-    public decimal Weight { get; set; }
+    public decimal Weight => StartWeight + Boxes.Sum(b => b.Weight);
 
-    public DateOnly? ExpiryDate { get; set; }
+    public DateOnly? ExpiryDate => Boxes.Any() ? Boxes.Min(x => x.ExpiryDate) : null;
 
-    public decimal Volume { get; set; }
+    public decimal Volume => Width * Height * Depth+Boxes.Sum(b=>b.Volume);
 
     public override string ToString()
     {

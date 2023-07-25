@@ -1,0 +1,17 @@
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContext.deps.json
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContext.runtimeconfig.json
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContext.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContext.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\Model.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\Model.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.csproj.AssemblyReference.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.AssemblyInfoInputs.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.AssemblyInfo.cs
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.csproj.CoreCompileInputs.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.csproj.CopyComplete
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\refint\FileStorageContext.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContext.genruntimeconfig.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\ref\FileStorageContext.dll

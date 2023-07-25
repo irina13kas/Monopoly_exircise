@@ -1,15 +1,16 @@
 ﻿public class Box
 {
-    public Box(long id, decimal width, decimal height, decimal depth, decimal weight, long palletId)
+    private const int EndOfExpirationDate = 100;
+    public Box(int palletId ,int id, decimal width, decimal height, decimal depth, decimal weight)
     {
+        PalletId = palletId;
         Id = id;
         Width = width;
         Height = height;
         Depth = depth;
         Weight = weight;
-        PalletId = palletId;
     }
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     public decimal Width { get; set; }
 
@@ -21,12 +22,18 @@
 
     public DateOnly? DateOfProdaction { get; set; }
 
-    public DateOnly? ExpiryDate { get; set; }
+    private DateOnly? expiryDate;
+    public DateOnly? ExpiryDate 
+    { 
+        get=> DateOfProdaction?.AddDays(EndOfExpirationDate) ?? expiryDate;
+        set => expiryDate = value;
+    } 
 
-    public decimal Volume { get; set; }
+
+    public decimal Volume => Width * Height * Depth;
 
     public Pallet? Pallet { get; set; }
-    public long PalletId { get; set; }
+    public int PalletId { get; set; }
 
 
     public override string ToString()

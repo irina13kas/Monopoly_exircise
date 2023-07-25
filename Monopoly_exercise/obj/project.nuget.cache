@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TrS29f21VctwIRiZZfWIlti3gIV7PkfhwQcrKz7E9QW4NpF+/PjlgDlLY41bPxLoDzuW7pcTpZj9WiU6Yx0TSw==",
+  "dgSpecHash": "Xacv9dQN/Z8uod8NqPBqqIVrZnrhD2dKdoLAwRk88hM74JNmaLoB+km6lree80YWELy95n6JKWhVGXaT9pzElg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\Monopoly_exercise.csproj",
+  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",

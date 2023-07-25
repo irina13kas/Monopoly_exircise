@@ -1,58 +1,43 @@
 ﻿using FileStorageContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic
 {
     public class Calculations 
     {
-        private const int EndOfExpirationDate = 100;
-        private const int StartPalletWeight = 30;
-        public ICollection<Pallet> pallets;
-        public readonly Dictionary<DateOnly, List<Pallet>> SortedPallets;
-        public readonly List<Pallet> TopThreeSortedPallets;
-        public Calculations(FileStorage fileStorage)
+        private readonly StoreDbContext db;
+        public Calculations()
         {
-            pallets=fileStorage.palletsData;
-            ComputeParametrs();
-            SortedPallets=SortPallets();
-            TopThreeSortedPallets = GetThreePalletsWithHighestExpiryDate();
+            db = new StoreDbContext();
         }
 
-        private void ComputeParametrs()
+        public async Task<Dictionary<DateOnly,List<Pallet>>> SortPallets()
         {
-            foreach(Pallet pallet in pallets) 
-            {
-                foreach(Box box in pallet.Boxes)
-                {
-                    if (box.ExpiryDate == null)
-                    {
-                        box.ExpiryDate = box.DateOfProdaction?.AddDays(EndOfExpirationDate);
-                    }
-                    box.Volume = box.Height * box.Depth * box.Width;
-                }
+            var pallet = await db.Pallets
+                .Include(x => x.Boxes)
+                .ToListAsync();
 
-                pallet.ExpiryDate = pallet.Boxes.Any() ?
-                                pallet.Boxes.Min(x => x.ExpiryDate) : null;
-                pallet.Volume = pallet.Depth * pallet.Width * pallet.Height + pallet.Boxes.Sum(x => x.Volume);
-                pallet.Weight = StartPalletWeight + pallet.Boxes.Sum(x => x.Weight);
-            }
-        }
-        private Dictionary<DateOnly,List<Pallet>> SortPallets()
-        {
-            var sortedPallets = pallets
+
+            return pallet 
                 .Where(x => x.ExpiryDate!=null)
                 .GroupBy(key => key.ExpiryDate)
                 .OrderBy(x => x.Key)
                 .ToDictionary(
                     x=>(DateOnly)x.Key!,
                     y=>y.OrderBy(p=>p.Weight).ToList());
-            return sortedPallets;
         }
 
-        private List<Pallet> GetThreePalletsWithHighestExpiryDate()
+        public async Task<List<Pallet>> GetThreePalletsWithHighestExpiryDate()
         {
-            var topSortedPallets = pallets.OrderByDescending(p => p.Boxes.Max(y => y.ExpiryDate))
+            var pal =await db.Pallets
+                .Include(x => x.Boxes)
+                .ToListAsync();
+            var topSortedPallets =  pal
+                .Where(x => x.Boxes.Any())
+                .OrderByDescending(p => p.Boxes.Max(y => y.ExpiryDate))
                 .Take(3)
                 .ToList();
+
             foreach(var pallet in topSortedPallets)
             {
                 pallet.Boxes = pallet.Boxes.OrderBy(b => b.Volume).ToList();

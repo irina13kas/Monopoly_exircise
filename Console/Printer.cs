@@ -1,10 +1,17 @@
 ﻿using BusinessLogic;
+using FileStorageContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace PrintToConsole
 {
     public class Printer
     {
-        private readonly Calculations sortedPallets;
+        private readonly StoreDbContext db;
+
+        public Printer() 
+        {
+            db = new StoreDbContext();
+        }
         public void PrintSortedByExpiryDatePallets(Dictionary<DateOnly, List<Pallet>> pallets)
         {
             int index = 1;
@@ -26,7 +33,7 @@ namespace PrintToConsole
             foreach(Pallet pallet in pallets)
             {
                 Console.WriteLine($"Паллет {pallet.Id}");
-                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)pallet.Boxes.Max(y=>y.ExpiryDate)}");
+                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)pallets.Max(y => y.ExpiryDate)}");
                 foreach(Box box in pallet.Boxes)
                 {
                     Console.WriteLine($"Объем: {box.Volume}");
