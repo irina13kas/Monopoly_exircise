@@ -10,10 +10,10 @@ namespace Tests
         public void AllBoxesLessThanPallet()
         {
             //arrange
-            FileStorage fileStorage = new FileStorage();
-            Calculations cal = new Calculations(fileStorage);
+            ApplicationContext db = new ApplicationContext();
+            Calculations cal = new Calculations();
             //act
-            foreach (var pallet in cal.pallets)
+            foreach (var pallet in db.Pallets)
             {
                 foreach (var box in pallet.Boxes)
                 {
@@ -26,10 +26,10 @@ namespace Tests
         public void ExpiryDateOfPalletIsTheLeastExpiryDateOfBoxes()
         {
             //arrange
-            FileStorage fileStorage = new FileStorage();
-            Calculations cal = new Calculations(fileStorage);
+            ApplicationContext db = new ApplicationContext();
+            Calculations cal = new Calculations();
             //act
-            foreach (var pallet in cal.pallets)
+            foreach (var pallet in db.Pallets)
             {
                 DateOnly? TheLeastExpiryDateOfBoxes = pallet.Boxes.Min(p => p.ExpiryDate);
                 //assert
@@ -41,9 +41,9 @@ namespace Tests
         public void IsSortingPalletsByExpiryDateWorkCorrectly()
         {
             //arrange
-            FileStorage fileStorage = new FileStorage();
-            Calculations cal = new Calculations(fileStorage);
-            var myPallets = cal.SortedPallets;
+            ApplicationContext db = new ApplicationContext();
+            Calculations cal = new Calculations();
+            var myPallets = cal.SortPallets();
             //act
             DateOnly? prExpiryDate = DateOnly.MinValue;
             foreach (var groupOfPallet in myPallets)
@@ -59,17 +59,17 @@ namespace Tests
                 }
             }
             //assert
-            Assert.Equal(cal.SortedPallets.SelectMany(x => x.Value).Count(), cal.pallets.Select(x => x.ExpiryDate).Distinct().Count());
+            Assert.Equal(myPallets.SelectMany(x => x.Value).Count(), db.Pallets.Select(x => x.ExpiryDate).Distinct().Count());
         }
 
         [Fact]
         public void GetThreePalletsWithHighestExpiryDateWorksCorrectly()
         {
             //arrange
-            FileStorage fileStorage = new FileStorage();
-            Calculations cal = new Calculations(fileStorage);
-            var myPallets = cal.TopThreeSortedPallets;
-            var pallets = cal.pallets;
+            ApplicationContext db = new ApplicationContext();
+            Calculations cal = new Calculations();
+            var myPallets = cal.GetThreePalletsWithHighestExpiryDate();
+            var pallets = db.Pallets;
             var expectedResult = new List<DateOnly?>();
             //act
             foreach(var pallet in pallets)

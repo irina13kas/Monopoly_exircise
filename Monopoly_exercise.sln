@@ -5,12 +5,6 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorageControler", "Monopoly_exercise\StorageControler.csproj", "{4AD1F224-ABD7-452B-A0B1-B7FAE4158234}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{7D97D06F-E61B-4BCD-8581-F7392798059A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{8322FB3E-C9B7-43A5-A6DE-50B49ED3C2CE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sort", "Sort", "{899C2C4E-E4B1-4B5D-A838-5BC126343520}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{53B7B9D2-16A7-4DCA-8C82-D2FB38690688}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{49AB696D-4C8E-4922-8827-505DEDC5305D}"
@@ -63,7 +57,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{899C2C4E-E4B1-4B5D-A838-5BC126343520} = {7D97D06F-E61B-4BCD-8581-F7392798059A}
 		{6356104F-4A54-47C2-AC35-088D3F506BF0} = {DCF10396-6759-44D7-B311-7D3189FDF02C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

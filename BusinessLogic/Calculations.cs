@@ -6,33 +6,37 @@ namespace BusinessLogic
     public class Calculations 
     {
         private readonly ApplicationContext db;
-        //public readonly Dictionary<DateOnly, List<Pallet>> SortedPallets;
-        //public readonly List<Pallet> TopThreeSortedPallets;
         public Calculations()
         {
             db = new ApplicationContext();
-            //TopThreeSortedPallets = GetThreePalletsWithHighestExpiryDate();
         }
 
         public async Task<Dictionary<DateOnly,List<Pallet>>> SortPallets()
         {
-            return await db.Pallets
-                .Include(x=>x.Boxes)
+            var pallet = await db.Pallets
+                .Include(x => x.Boxes)
+                .ToListAsync();
+
+
+            return pallet 
                 .Where(x => x.ExpiryDate!=null)
                 .GroupBy(key => key.ExpiryDate)
                 .OrderBy(x => x.Key)
-                .ToDictionaryAsync(
+                .ToDictionary(
                     x=>(DateOnly)x.Key!,
                     y=>y.OrderBy(p=>p.Weight).ToList());
         }
 
         public async Task<List<Pallet>> GetThreePalletsWithHighestExpiryDate()
         {
-            var topSortedPallets = await db.Pallets
+            var pal =await db.Pallets
                 .Include(x => x.Boxes)
+                .ToListAsync();
+            var topSortedPallets =  pal
+                .Where(x => x.Boxes.Any())
                 .OrderByDescending(p => p.Boxes.Max(y => y.ExpiryDate))
                 .Take(3)
-                .ToListAsync();
+                .ToList();
 
             foreach(var pallet in topSortedPallets)
             {

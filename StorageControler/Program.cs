@@ -10,7 +10,9 @@ namespace StorageControler
         {
             ApplicationContext db = new ApplicationContext();
             Calculations calculator= new Calculations();
+            var r = await calculator.SortPallets();
             Printer printer = new Printer();
+
             printer.PrintSortedByExpiryDatePallets(await calculator.SortPallets());
             printer.PrintTopThreePalletsByBoxesExpiryDate(await calculator.GetThreePalletsWithHighestExpiryDate());
         }

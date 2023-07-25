@@ -1,16 +1,16 @@
 ﻿public class Box
 {
     private const int EndOfExpirationDate = 100;
-    public Box(long id, decimal width, decimal height, decimal depth, decimal weight, long palletId)
+    public Box(int palletId ,int id, decimal width, decimal height, decimal depth, decimal weight)
     {
+        PalletId = palletId;
         Id = id;
         Width = width;
         Height = height;
         Depth = depth;
         Weight = weight;
-        PalletId = palletId;
     }
-    public long Id { get; set; }
+    public int Id { get; set; }
 
     public decimal Width { get; set; }
 
@@ -27,7 +27,7 @@
     public decimal Volume => Width * Height * Depth;
 
     public Pallet? Pallet { get; set; }
-    public long PalletId { get; set; }
+    public int PalletId { get; set; }
 
 
     public override string ToString()
