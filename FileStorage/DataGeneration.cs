@@ -1,4 +1,4 @@
-﻿namespace FileStorageContex
+﻿namespace FileStorageContext
 {
     internal static class DataGeneration
     {
@@ -13,7 +13,7 @@
             {
                 int countOfBoxes = rdm.Next(20);
                 Pallet pallet = new Pallet(
-                    rdm.NextInt64(),
+                    i+1,
                     (decimal)(rdm.NextDouble() * MaxValueOfPallet),
                     (decimal)(rdm.NextDouble() * MaxValueOfPallet),
                     (decimal)(rdm.NextDouble() * MaxValueOfPallet));
@@ -22,7 +22,7 @@
             return pallets;
         }
 
-        private static ICollection<Box> GenerateBox(int index)
+        public static ICollection<Box> GenerateBoxes()
         {
             var boxes = new List<Box>();
             Random rdm = new Random();
@@ -34,14 +34,10 @@
                    (decimal)(rdm.NextDouble() * MaxValueOfBox),
                    (decimal)(rdm.NextDouble() * MaxValueOfBox),
                    (decimal)(rdm.NextDouble() * MaxValueOfBox),
-                   rdm.NextInt64(numberOfPallets));
-                if (index % 2 == 0)
+                   rdm.NextInt64(1, i + 1));
+                if (i % 2 == 0)
                 {
                     box.DateOfProdaction = (new DateOnly(2020, 10, 1)).AddDays(rdm.Next(730));
-                }
-                else
-                {
-                    box.ExpiryDate = (new DateOnly(2020, 10, 1)).AddDays(rdm.Next(730));
                 }
                 boxes.Add(box);
             }
@@ -50,11 +46,7 @@
 
         private static bool CheckSizeOfPallet(decimal boxHeight, decimal boxWidth, decimal palletHeight, decimal palletWidth)
         {
-            decimal maxParametrOfBox = Math.Max(boxHeight, boxWidth);
-            decimal maxParametrOfPallet = Math.Max(palletHeight, palletWidth);
-            decimal minParametrOfBox = boxHeight + boxWidth - maxParametrOfBox;
-            decimal minParametrOfPallet = palletHeight + palletWidth - maxParametrOfPallet;
-            if (maxParametrOfBox <= maxParametrOfPallet && minParametrOfBox <= minParametrOfPallet)
+            if (boxHeight<=palletHeight && boxWidth<=palletWidth || boxWidth<=palletHeight && boxHeight<=palletWidth)
             {
                 return true;
             }

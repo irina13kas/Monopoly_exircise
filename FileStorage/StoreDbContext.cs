@@ -1,28 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FileStorageContex
+namespace FileStorageContext
 {
-    public class StoreDbContext: DbContext
+    public class ApplicationContext: DbContext
     {
         public virtual DbSet<Pallet> Pallets => Set<Pallet>();
         public virtual DbSet<Box> Boxes => Set<Box>();
 
-/*        public StoreDbContext(DbContextOptions<StoreDbContext> options) : base(options)
+        public ApplicationContext()
         {
-            options.Sqlite("Filename=Pallets.db");
-        }*/
-
-        public StoreDbContext()
-        {
-            Database.EnsureDeleted();   // удаляем бд со старой схемой
             Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string path = Path.Combine(Environment.CurrentDirectory,"Pallets.db");
-            Console.WriteLine($"Using {path} database file.");
-            optionsBuilder.UseSqlite("Filename=Pallets.db");
+            optionsBuilder.UseSqlite("Data Source=Pallets.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,7 +24,7 @@ namespace FileStorageContex
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
 
             modelBuilder.Entity<Pallet>().HasData(DataGeneration.GeneratePallets());
-            modelBuilder.Entity<Pallet>().HasData(DataGeneration.GeneratePallets());
+            modelBuilder.Entity<Box>().HasData(DataGeneration.GenerateBoxes());
         }
     }
 }

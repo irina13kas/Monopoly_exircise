@@ -605,6 +605,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "FileStorageContex": "1.0.0",
+          "FileStorageContext": "1.0.0",
           "Model": "1.0.0"
         },
         "compile": {
@@ -619,7 +620,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
           "Model": "1.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -628,6 +629,22 @@
         },
         "runtime": {
           "bin/placeholder/FileStorageContex.dll": {}
+        }
+      },
+      "FileStorageContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
+          "Model": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/FileStorageContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileStorageContext.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -1448,6 +1465,11 @@
       "path": "../FileStorage/FileStorageContex.csproj",
       "msbuildProject": "../FileStorage/FileStorageContex.csproj"
     },
+    "FileStorageContext/1.0.0": {
+      "type": "project",
+      "path": "../FileStorage/FileStorageContext.csproj",
+      "msbuildProject": "../FileStorage/FileStorageContext.csproj"
+    },
     "Model/1.0.0": {
       "type": "project",
       "path": "../Model/Model.csproj",
@@ -1462,7 +1484,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "BusinessLogic >= 1.0.0",
-      "FileStorageContex >= 1.0.0",
+      "FileStorageContext >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Model >= 1.0.0",
@@ -1476,9 +1498,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\Monopoly_exercise.csproj",
-      "projectName": "Monopoly_exercise",
-      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\Monopoly_exercise.csproj",
+      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
+      "projectName": "StorageControler",
+      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
       "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\obj\\",
       "projectStyle": "PackageReference",
@@ -1508,8 +1530,8 @@
             "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj": {
               "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj"
             },
-            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
-              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj"
+            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContext.csproj": {
+              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContext.csproj"
             },
             "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"

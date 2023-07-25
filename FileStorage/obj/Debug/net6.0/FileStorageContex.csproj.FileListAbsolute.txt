@@ -30,7 +30,6 @@ C:\Users\Ирина\Source\Repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\
 C:\Users\Ирина\Source\Repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\refint\FileStorageContex.dll
 C:\Users\Ирина\Source\Repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\FileStorageContex.pdb
 C:\Users\Ирина\Source\Repos\Monopoly_exircise\FileStorage\obj\Debug\net6.0\ref\FileStorageContex.dll
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\DbContext\Pallets.db
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContex.deps.json
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContex.runtimeconfig.json
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\FileStorage\bin\Debug\net6.0\FileStorageContex.dll

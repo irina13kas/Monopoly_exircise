@@ -1,12 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FileStorageContex.Configurations
+namespace FileStorageContext.Configurations
 {
     public class PalletConfiguration: IEntityTypeConfiguration<Pallet>
     {
@@ -34,10 +29,8 @@ namespace FileStorageContex.Configurations
                .HasColumnType(numericType)
                .HasPrecision(integerPart, fractationPart);
 
-            builder
-               .Property(x => x.Volume)
-               .HasColumnType(numericType)
-               .HasPrecision(integerPart, fractationPart);
+            builder.Ignore(x => x.Volume);
+            builder.Ignore(x => x.ExpiryDate);
         }
     }
 }

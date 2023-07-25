@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
-    <ProjectReference Include="..\FileStorage\FileStorageContex.csproj" />
+    <ProjectReference Include="..\FileStorage\FileStorageContext.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 

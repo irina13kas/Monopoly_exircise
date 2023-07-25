@@ -19,11 +19,11 @@
 
     public decimal Depth { get; set; }
 
-    public decimal Weight { get; set; }
+    public decimal Weight => StartWeight + Boxes.Sum(b => b.Weight);
 
-    public DateOnly? ExpiryDate { get; set; }
+    public DateOnly? ExpiryDate => Boxes.Any() ? Boxes.Min(x => x.ExpiryDate) : null;
 
-    public decimal Volume { get; set; }
+    public decimal Volume => Width * Height * Depth+Boxes.Sum(b=>b.Volume);
 
     public override string ToString()
     {

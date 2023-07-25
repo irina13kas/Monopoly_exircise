@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
-namespace FileStorageContex.Configurations
+namespace FileStorageContext.Configurations
 {
     public class BoxConfiguration: IEntityTypeConfiguration<Box>
     {
@@ -30,10 +30,7 @@ namespace FileStorageContex.Configurations
                 .HasColumnType(numericType)
                 .HasPrecision(integerPart, fractationPart);
 
-            builder
-                .Property(x => x.Volume)
-                .HasColumnType(numericType)
-                .HasPrecision(integerPart, fractationPart);
+            builder.Ignore(x => x.Volume);
 
             builder
                .Property(x => x.Weight)
@@ -41,6 +38,7 @@ namespace FileStorageContex.Configurations
                .HasPrecision(integerPart, fractationPart);
 
             builder.Ignore(x => x.DateOfProdaction);
+            builder.Ignore(x => x.ExpiryDate);
 
             builder
                 .HasOne(b => b.Pallet)
