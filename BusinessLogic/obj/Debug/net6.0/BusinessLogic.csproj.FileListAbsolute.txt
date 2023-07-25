@@ -37,9 +37,7 @@ C:\Users\Ирина\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\BusinessLogic.deps.json
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\BusinessLogic.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\BusinessLogic.pdb
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\FileStorageContext.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\Model.dll
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\FileStorageContext.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\Model.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.AssemblyReference.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
@@ -51,3 +49,5 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.0\refint\BusinessLogic.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.0\BusinessLogic.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\BusinessLogic\obj\Debug\net6.0\ref\BusinessLogic.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\DbStorageContext.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\BusinessLogic\bin\Debug\net6.0\DbStorageContext.pdb

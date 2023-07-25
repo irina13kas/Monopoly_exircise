@@ -534,8 +534,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DbStorageContext": "1.0.0",
           "FileStorageContex": "1.0.0",
-          "FileStorageContext": "1.0.0",
           "Model": "1.0.0"
         },
         "compile": {
@@ -543,6 +543,22 @@
         },
         "runtime": {
           "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
+      "DbStorageContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
+          "Model": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/DbStorageContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DbStorageContext.dll": {}
         }
       },
       "FileStorageContex/1.0.0": {
@@ -559,22 +575,6 @@
         },
         "runtime": {
           "bin/placeholder/FileStorageContex.dll": {}
-        }
-      },
-      "FileStorageContext/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
-          "Model": "1.0.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "bin/placeholder/FileStorageContext.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FileStorageContext.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -1285,15 +1285,15 @@
       "path": "../BusinessLogic/BusinessLogic.csproj",
       "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
     },
+    "DbStorageContext/1.0.0": {
+      "type": "project",
+      "path": "../FileStorage/DbStorageContext.csproj",
+      "msbuildProject": "../FileStorage/DbStorageContext.csproj"
+    },
     "FileStorageContex/1.0.0": {
       "type": "project",
       "path": "../FileStorage/FileStorageContex.csproj",
       "msbuildProject": "../FileStorage/FileStorageContex.csproj"
-    },
-    "FileStorageContext/1.0.0": {
-      "type": "project",
-      "path": "../FileStorage/FileStorageContext.csproj",
-      "msbuildProject": "../FileStorage/FileStorageContext.csproj"
     },
     "Model/1.0.0": {
       "type": "project",
@@ -1313,11 +1313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
+      "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
       "projectName": "PrintToConsole",
-      "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
+      "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
       "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\obj\\",
+      "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1339,8 +1339,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
             }
           }
         }

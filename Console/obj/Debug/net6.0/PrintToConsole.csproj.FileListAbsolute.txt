@@ -42,10 +42,8 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\PrintToConsole.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\PrintToConsole.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\BusinessLogic.dll
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\FileStorageContext.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\Model.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\BusinessLogic.pdb
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\FileStorageContext.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\bin\Debug\net6.0\Model.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0\PrintToConsole.csproj.AssemblyReference.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0\PrintToConsole.GeneratedMSBuildEditorConfig.editorconfig
@@ -57,3 +55,5 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0\refint\PrintToConsole.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0\PrintToConsole.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Console\obj\Debug\net6.0\ref\PrintToConsole.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Console\bin\Debug\net6.0\DbStorageContext.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Console\bin\Debug\net6.0\DbStorageContext.pdb

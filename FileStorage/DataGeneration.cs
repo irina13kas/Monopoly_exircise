@@ -1,4 +1,4 @@
-﻿namespace FileStorageContext
+﻿namespace DbStorageContext
 {
     internal static class DataGeneration
     {

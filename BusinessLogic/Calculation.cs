@@ -1,12 +1,12 @@
-﻿using FileStorageContext;
+﻿using DbStorageContext;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogic
 {
-    public class Calculations 
+    public class Calculation 
     {
         private readonly StoreDbContext db;
-        public Calculations()
+        public Calculation()
         {
             db = new StoreDbContext();
         }

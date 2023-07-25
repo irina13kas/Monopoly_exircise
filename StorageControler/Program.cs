@@ -1,5 +1,5 @@
 ﻿using BusinessLogic;
-using FileStorageContext;
+using DbStorageContext;
 using PrintToConsole;
 
 namespace StorageControler
@@ -9,7 +9,7 @@ namespace StorageControler
         async static Task Main(string[] args)
         {
             StoreDbContext db = new StoreDbContext();
-            Calculations calculator= new Calculations();
+            Calculation calculator= new Calculation();
             var r = await calculator.SortPallets();
             Printer printer = new Printer();
 

@@ -1,15 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FileStorageContext
+namespace DbStorageContext
 {
     public class StoreDbContext: DbContext
     {
         public virtual DbSet<Pallet> Pallets => Set<Pallet>();
         public virtual DbSet<Box> Boxes => Set<Box>();
 
-        //public StoreDbContext(DbContextOptions<StoreDbContext> contextOptions)
-        //: base(contextOptions)
-        //{ }
         public StoreDbContext()
         {
             Database.EnsureDeleted();

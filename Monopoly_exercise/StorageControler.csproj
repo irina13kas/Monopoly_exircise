@@ -22,7 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
     <ProjectReference Include="..\Console\PrintToConsole.csproj" />
-    <ProjectReference Include="..\FileStorage\FileStorageContext.csproj" />
+    <ProjectReference Include="..\FileStorage\DbStorageContext.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 

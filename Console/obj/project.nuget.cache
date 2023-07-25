@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2qpJ8kHMmflsmilsMe1x9HvGrTa5IGM3qn+qd+0mH7FIBsFsAA9wtKRoXepuXNBAh+z2DMoD4OV/ZRol/kt0+Q==",
+  "dgSpecHash": "KNUVSyCZhBiMYamNOjlzmq5rM0RcWQB5zRPJwVlO7LRvOHP4MxMLD78gIq8bkOmnSCjAETnX1ryWoXe1ID9t4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
+  "projectFilePath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

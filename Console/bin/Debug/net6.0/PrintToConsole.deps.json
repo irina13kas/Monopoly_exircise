@@ -389,15 +389,15 @@
       },
       "BusinessLogic/1.0.0": {
         "dependencies": {
+          "DbStorageContext": "1.0.0",
           "FileStorageContex": "1.0.0",
-          "FileStorageContext": "1.0.0",
           "Model": "1.0.0"
         },
         "runtime": {
           "BusinessLogic.dll": {}
         }
       },
-      "FileStorageContext/1.0.0": {
+      "DbStorageContext/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
@@ -405,7 +405,7 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "FileStorageContext.dll": {}
+          "DbStorageContext.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -608,7 +608,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FileStorageContext/1.0.0": {
+    "DbStorageContext/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

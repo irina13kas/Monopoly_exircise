@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{53B7B9D2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{49AB696D-4C8E-4922-8827-505DEDC5305D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorageContext", "FileStorage\FileStorageContext.csproj", "{609056D0-F7EA-4566-B1A1-46E6197FE6D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbStorageContext", "FileStorage\DbStorageContext.csproj", "{609056D0-F7EA-4566-B1A1-46E6197FE6D1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{49AB696D-4C8E-4922-8827-505DEDC5305D} = {49AB696D-4C8E-4922-8827-505DEDC5305D}
 	EndProjectSection

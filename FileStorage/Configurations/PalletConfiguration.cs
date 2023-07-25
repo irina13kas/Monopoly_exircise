@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FileStorageContext.Configurations
+namespace DbStorageContext.Configurations
 {
     public class PalletConfiguration: IEntityTypeConfiguration<Pallet>
     {

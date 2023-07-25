@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FileStorage\FileStorageContex.csproj" />
-    <ProjectReference Include="..\FileStorage\FileStorageContext.csproj" />
+    <ProjectReference Include="..\FileStorage\DbStorageContext.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
 

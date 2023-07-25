@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PPwrzAySxjdRUeCO+/pelkmotDUSZtxqLvtR7jhO99DDjZbmT77uxzGFEXfFGyZityqoJ4TpSnSGtmrxG/Rlzw==",
+  "dgSpecHash": "rVfRb0Vpou0P+j5DuiDlFmky+jthlZTEyQxJ+Y+5NLCSOWG+gcDK8+37M6kOu4OVPQahnAyzJl+UC9TWDQXZmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContext.csproj",
+  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",

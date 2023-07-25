@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tk63FGSr0dAUCm95osgs3QtPmG1S1z1HSbeJnx4UuS1AOAmkUqE9mt2saMm9GyxiYVCQAWcU3OygH6sL6+W9vw==",
+  "dgSpecHash": "4qj/iXmqpSkzTZvUvI5N4lXX5PaIeeQQ9a33EKeY9En4hZEGn6rS1/lQOfrBWWVcsy2/GRyjX2J7PfMjelXt1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

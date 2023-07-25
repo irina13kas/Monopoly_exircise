@@ -53,12 +53,10 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\De
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\BusinessLogic.dll
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\FileStorageContext.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Model.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\PrintToConsole.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\BusinessLogic.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\PrintToConsole.pdb
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\FileStorageContext.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Model.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\StorageControler.csproj.AssemblyReference.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\StorageControler.GeneratedMSBuildEditorConfig.editorconfig
@@ -71,3 +69,5 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\De
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\StorageControler.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\StorageControler.genruntimeconfig.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\ref\StorageControler.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\DbStorageContext.dll
+C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\DbStorageContext.pdb
