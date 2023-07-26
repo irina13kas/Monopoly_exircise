@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj": {}
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,14 +33,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\FileStorageContex.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }
@@ -74,12 +74,12 @@
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj": {
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
+        "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
         "projectName": "PrintToConsole",
-        "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
+        "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\obj\\",
         "projectStyle": "PackageReference",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
               }
             }
           }
@@ -138,12 +138,12 @@
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
+        "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
         "projectName": "DbStorageContext",
-        "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
+        "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\obj\\",
         "projectStyle": "PackageReference",
@@ -167,8 +167,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }
@@ -202,6 +202,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -318,12 +322,12 @@
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj": {
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\obj\\",
         "projectStyle": "PackageReference",
@@ -378,12 +382,12 @@
         }
       }
     },
-    "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj": {
+    "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
+        "projectUniqueName": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
         "projectName": "StorageControler",
-        "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
+        "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Monopoly_exercise\\StorageControler.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Monopoly_exercise\\obj\\",
         "projectStyle": "PackageReference",
@@ -407,17 +411,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Console\\PrintToConsole.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
               },
-              "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\Model.csproj"
+              "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj"
               }
             }
           }

@@ -31,7 +31,7 @@ namespace PrintToConsole
             foreach(Pallet pallet in pallets)
             {
                 Console.WriteLine($"Паллет {pallet.Id}");
-                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)pallets.Max(y => y.ExpiryDate)}");
+                Console.WriteLine($"Наибольший срок годности у коробки: {(DateOnly)pallet.Boxes.Max(y => y.ExpiryDate)}");
                 foreach(Box box in pallet.Boxes)
                 {
                     Console.WriteLine($"Объем: {box.Volume}");

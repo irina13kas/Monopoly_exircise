@@ -71,3 +71,9 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\De
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\obj\Debug\net6.0\ref\StorageControler.dll
 C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\DbStorageContext.dll
 C:\Users\irina.kasianova\Source\Repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\DbStorageContext.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Monopoly_exercise\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
