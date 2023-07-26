@@ -8,7 +8,7 @@ namespace StorageControler
     {
         async static Task Main(string[] args)
         {
-            StoreDbContext db = new StoreDbContext();
+            DbInitializer db = new DbInitializer();
             Calculation calculator= new Calculation();
             Printer printer = new Printer();
 

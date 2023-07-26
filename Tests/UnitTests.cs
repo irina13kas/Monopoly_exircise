@@ -1,17 +1,18 @@
 
-using FileStorageContext;
+using DbStorageContext;
 using BusinessLogic;
+using Microsoft.EntityFrameworkCore;
 
 namespace Tests
 {
     public class UnitTests
     {
+        DbInitializer db = new DbInitializer();
+        Calculation cal=new Calculation();
         [Fact]
         public void AllBoxesLessThanPallet()
         {
-            //arrange
-            ApplicationContext db = new ApplicationContext();
-            Calculations cal = new Calculations();
+
             //act
             foreach (var pallet in db.Pallets)
             {
@@ -25,9 +26,6 @@ namespace Tests
         [Fact]
         public void ExpiryDateOfPalletIsTheLeastExpiryDateOfBoxes()
         {
-            //arrange
-            ApplicationContext db = new ApplicationContext();
-            Calculations cal = new Calculations();
             //act
             foreach (var pallet in db.Pallets)
             {
@@ -38,12 +36,10 @@ namespace Tests
         }
 
         [Fact]
-        public void IsSortingPalletsByExpiryDateWorkCorrectly()
+        public async Task IsSortingPalletsByExpiryDateWorkCorrectly()
         {
             //arrange
-            ApplicationContext db = new ApplicationContext();
-            Calculations cal = new Calculations();
-            var myPallets = cal.SortPallets();
+            var myPallets = await cal.SortPallets();
             //act
             DateOnly? prExpiryDate = DateOnly.MinValue;
             foreach (var groupOfPallet in myPallets)
@@ -59,20 +55,20 @@ namespace Tests
                 }
             }
             //assert
-            Assert.Equal(myPallets.SelectMany(x => x.Value).Count(), db.Pallets.Select(x => x.ExpiryDate).Distinct().Count());
+            Assert.Equal(myPallets.Count(), db.Pallets.Count());
         }
 
         [Fact]
-        public void GetThreePalletsWithHighestExpiryDateWorksCorrectly()
+        public async Task GetThreePalletsWithHighestExpiryDateWorksCorrectly()
         {
             //arrange
-            ApplicationContext db = new ApplicationContext();
-            Calculations cal = new Calculations();
-            var myPallets = cal.GetThreePalletsWithHighestExpiryDate();
-            var pallets = db.Pallets;
+            var myPallets = await cal.GetThreePalletsWithHighestExpiryDate();
+            var pallets = await db.Pallets
+                .Include(x => x.Boxes)
+                .ToListAsync();
             var expectedResult = new List<DateOnly?>();
             //act
-            foreach(var pallet in pallets)
+            foreach (var pallet in pallets)
             {
                 var sortedBoxes = pallet.Boxes.Max(b => b.ExpiryDate);
                 expectedResult.Add(sortedBoxes);
@@ -80,21 +76,21 @@ namespace Tests
             expectedResult.Sort();
             expectedResult.Reverse();
             expectedResult = expectedResult.Take(3).ToList();
-            for(int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                Assert.Equal(expectedResult[i], myPallets[i].Boxes.Max(b=>b.ExpiryDate));
+                Assert.Equal(expectedResult[i], myPallets[i].Boxes.Max(b => b.ExpiryDate));
             }
             foreach (var pallet in myPallets)
             {
                 decimal prVolume = 0.0M;
-                foreach(var box in pallet.Boxes)
+                foreach (var box in pallet.Boxes)
                 {
-                    Assert.True(box.Volume>prVolume);
+                    Assert.True(box.Volume > prVolume);
                     prVolume = box.Volume;
                 }
             }
             //assert
-            Assert.Equal(myPallets.Count,3);
+            Assert.Equal(myPallets.Count, 3);
         }
 
     }

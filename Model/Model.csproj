@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ContextInterfaces\**" />
+    <EmbeddedResource Remove="ContextInterfaces\**" />
+    <None Remove="ContextInterfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="IBoxDbContext.cs" />
+    <Compile Remove="IPalletDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+  </ItemGroup>
+
 </Project>

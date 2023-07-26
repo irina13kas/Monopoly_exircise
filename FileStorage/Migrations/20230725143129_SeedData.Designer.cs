@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DbStorageContext.Migrations
 {
-    [DbContext(typeof(StoreDbContext))]
+    [DbContext(typeof(DbInitializer))]
     [Migration("20230725143129_SeedData")]
     partial class SeedData
     {

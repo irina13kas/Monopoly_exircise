@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace FileStorageContext.Migrations
 {
-    [DbContext(typeof(StoreDbContext))]
+    [DbContext(typeof(DbInitializer))]
     partial class StoreDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pL6Wptxw/Ir0mHUfizqcT1u0qChine1SaVTp6YdA9B1rw8dsQ5lgb0oIJXoFBOQ/LWg6dzCkDKWyfqqpmtOaPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\irina.kasianova\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\irina.kasianova\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

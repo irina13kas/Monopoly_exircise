@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DbContext\**" />
-    <EmbeddedResource Remove="DbContext\**" />
-    <None Remove="DbContext\**" />
+    <Compile Remove="Context\**" />
+    <EmbeddedResource Remove="Context\**" />
+    <None Remove="Context\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +29,9 @@
   </ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="BoxDbContext.cs" />
 	  <Compile Remove="FileStorage.cs" />
+	  <Compile Remove="PalletDbContext.cs" />
 	</ItemGroup>
 
 	
