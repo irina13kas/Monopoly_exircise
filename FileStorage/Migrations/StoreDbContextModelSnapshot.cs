@@ -21,7 +21,7 @@ namespace FileStorageContext.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateOnly?>("DateOfProdaction")
+                    b.Property<DateOnly?>("DateOfProduction")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Depth")

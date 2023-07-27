@@ -21,6 +21,7 @@ namespace DbStorageContext.Configurations
                .Property(x => x.Depth)
                .IsRequired();
 
+
             builder.Ignore(x => x.Volume);
             builder.Ignore(x => x.ExpiryDate);
         }

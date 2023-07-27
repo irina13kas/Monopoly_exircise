@@ -8,6 +8,8 @@
         Height = height;
         Depth = depth;
     }
+
+    public Pallet() { }
     public ICollection<Box> Boxes { get; set; }=new List<Box>();
 
     public int Id { get; set; }

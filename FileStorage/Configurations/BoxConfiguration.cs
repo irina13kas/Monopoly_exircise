@@ -29,7 +29,6 @@ namespace DbStorageContext.Configurations
                .Property(x => x.Weight)
                 .IsRequired();
 
-
             builder
                 .HasOne(b => b.Pallet)
                 .WithMany(p => p.Boxes)

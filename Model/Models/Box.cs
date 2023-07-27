@@ -1,6 +1,8 @@
 ﻿public class Box
 {
     private const int EndOfExpirationDate = 100;
+
+    public Box() { }
     public Box(int palletId ,int id, decimal width, decimal height, decimal depth, decimal weight)
     {
         PalletId = palletId;
@@ -20,12 +22,12 @@
 
     public decimal Weight { get; set; }
 
-    public DateOnly? DateOfProdaction { get; set; }
+    public DateOnly? DateOfProduction { get; set; }
 
     private DateOnly? expiryDate;
     public DateOnly? ExpiryDate 
     { 
-        get=> DateOfProdaction?.AddDays(EndOfExpirationDate) ?? expiryDate;
+        get=> DateOfProduction?.AddDays(EndOfExpirationDate) ?? expiryDate;
         set => expiryDate = value;
     } 
 
