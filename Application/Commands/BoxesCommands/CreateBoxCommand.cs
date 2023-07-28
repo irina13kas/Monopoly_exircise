@@ -9,7 +9,7 @@ namespace Application.Commands.BoxesCommands
         public decimal BoxDepth { get; set; }
         public decimal BoxWeight { get; set; }
         public DateOnly? BoxExpiryDate { get; set; }
-        public DateOnly? BoxDateOfProdaction { get; set; }
+        public DateOnly? BoxDateOfProduction { get; set; }
 
     }
 }

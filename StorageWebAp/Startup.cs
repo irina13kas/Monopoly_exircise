@@ -22,7 +22,8 @@ namespace StorageWebApi
             });
             services.AddApplication();
             services.AddPersistance(Configuration);
-
+            services.AddControllers();
+            //4 доступ должен быть ограничен
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", policy =>

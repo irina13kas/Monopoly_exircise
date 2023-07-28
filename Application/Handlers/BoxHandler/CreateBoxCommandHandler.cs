@@ -1,5 +1,6 @@
 ﻿using Application.Commands.BoxesCommands;
 using Application.Commands.PalletsCommands;
+using Application.Commands.Queries.GetPalletsList;
 using DbStorageContext;
 using MediatR;
 
@@ -27,7 +28,7 @@ namespace Application.Handlers.BoxHandler
                 ExpiryDate = request.BoxExpiryDate,
                 DateOfProduction = request.BoxExpiryDate,
             };
-            await _dbContext.AddAsync(box);
+            await _dbContext.AddAsync(box, cancellationToken);
             await _dbContext.SaveChangesAsync();
             return box.Id;
         }
