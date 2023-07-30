@@ -30,7 +30,7 @@ namespace DbStorageContext.Migrations
 
             migrationBuilder.InsertData(
                 table: "Boxes",
-                columns: new[] { "Id", "DateOfProdaction", "Depth", "ExpiryDate", "Height", "PalletId", "Weight", "Width" },
+                columns: new[] { "Id", "DateOfProduction", "Depth", "ExpiryDate", "Height", "PalletId", "Weight", "Width" },
                 values: new object[,]
                 {
                     { 1, new DateOnly(2021, 3, 25), 211.14774153125669693111249465m, null, 113.47734842348327051579454223m, 7, 28.145790569931025m, 67.673403894104358267209257294m },

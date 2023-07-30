@@ -41,7 +41,7 @@
                    GenerateRandomDecimal(1, pallet.Weight));
                 if (boxId % 2 == 0)
                 {
-                    box.DateOfProdaction = (new DateOnly(2020, 10, 1)).AddDays(rdm.Next(730));
+                    box.DateOfProduction = (new DateOnly(2020, 10, 1)).AddDays(rdm.Next(730));
                 }
                 else
                 {

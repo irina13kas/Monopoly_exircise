@@ -11,7 +11,7 @@
         "projectName": "BusinessLogic",
         "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,7 +81,7 @@
         "projectName": "DbStorageContext",
         "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\FileStorage\\obj\\",
+        "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -265,7 +265,7 @@
         "projectName": "Model",
         "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\Model\\obj\\",
+        "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -298,6 +298,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DbStorageContext.Migrations
 {
-    [DbContext(typeof(StoreDbContext))]
+    [DbContext(typeof(DbInitializer))]
     [Migration("20230725143129_SeedData")]
     partial class SeedData
     {
@@ -23,7 +23,7 @@ namespace DbStorageContext.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateOnly?>("DateOfProdaction")
+                    b.Property<DateOnly?>("DateOfProduction")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Depth")

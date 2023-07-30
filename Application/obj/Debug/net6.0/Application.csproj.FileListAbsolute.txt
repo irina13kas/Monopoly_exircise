@@ -1,0 +1,17 @@
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\Application.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\DbStorageContext.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\Model.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\DbStorageContext.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\bin\Debug\net6.0\Model.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\Application\obj\Debug\net6.0\ref\Application.dll

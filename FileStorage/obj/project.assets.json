@@ -603,6 +603,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },

@@ -688,6 +688,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -1586,7 +1589,7 @@
       "projectName": "BusinessLogic",
       "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\irina.kasianova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irina.kasianova\\Source\\Repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,11 +4,11 @@ namespace PrintToConsole
 {
     public class Printer
     {
-        private readonly StoreDbContext db;
+        private readonly DbInitializer db;
 
         public Printer() 
         {
-            db = new StoreDbContext();
+            db = new DbInitializer();
         }
         public void PrintSortedByExpiryDatePallets(Dictionary<DateOnly, List<Pallet>> pallets)
         {
