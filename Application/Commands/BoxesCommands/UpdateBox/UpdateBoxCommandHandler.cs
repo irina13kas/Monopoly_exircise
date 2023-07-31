@@ -1,9 +1,9 @@
-﻿using Application.Commands.BoxesCommands;
-using DbStorageContext;
+﻿using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Application.Common.Exceptions;
-namespace Application.Handlers.BoxHandler
+
+namespace Application.Commands.BoxesCommands.UpdateBox
 {
     public class UpdateBoxCommandHandler : IRequestHandler<UpdateBoxCommand>
     {

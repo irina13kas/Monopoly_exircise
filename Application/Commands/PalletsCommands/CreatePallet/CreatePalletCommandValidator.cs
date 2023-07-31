@@ -1,7 +1,6 @@
-﻿using Application.Commands.PalletsCommands.CreatePallet;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace Application.Commands.PalletsCommands.Validation.PalletValidation
+namespace Application.Commands.PalletsCommands.CreatePallet
 {
     public class CreatePalletCommandValidator : AbstractValidator<CreatePalletCommand>
     {

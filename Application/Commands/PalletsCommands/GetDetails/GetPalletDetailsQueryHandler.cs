@@ -1,12 +1,11 @@
-﻿using Application.Commands.PalletsCommands.GetDetails;
-using Application.Commands.Vm.PalletVm;
+﻿using Application.Commands.Vm.PalletVm;
 using Application.Common.Exceptions;
 using AutoMapper;
 using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Handlers.PalletHandler
+namespace Application.Commands.PalletsCommands.GetDetails
 {
     public class GetPalletDetailsQueryHandler
         : IRequestHandler<GetPalletDetailsCommand, PalletVm>

@@ -1,12 +1,11 @@
-﻿using Application.Commands.PalletsCommands.GetListWithPagination;
-using Application.Commands.Vm.PalletVm;
+﻿using Application.Commands.Vm.PalletVm;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Handlers.PalletHandler
+namespace Application.Commands.PalletsCommands.GetListWithPagination
 {
     public class GetPalletListWithPaginationHandler : IRequestHandler<GetPalletListWithPaginationCommand, PalletListVm>
     {

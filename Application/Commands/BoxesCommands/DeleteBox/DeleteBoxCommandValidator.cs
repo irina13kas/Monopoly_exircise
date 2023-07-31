@@ -1,11 +1,11 @@
 ﻿using FluentValidation;
 
-namespace Application.Commands.BoxesCommands.BoxValidation
+namespace Application.Commands.BoxesCommands.DeleteBox
 {
     public class DeleteBoxCommandValidator : AbstractValidator<DeleteBoxCommand>
     {
-        public DeleteBoxCommandValidator() 
-        { 
+        public DeleteBoxCommandValidator()
+        {
             RuleFor(deleteBoxCommand =>
                 deleteBoxCommand.BoxId).NotEmpty().GreaterThan(0);
         }

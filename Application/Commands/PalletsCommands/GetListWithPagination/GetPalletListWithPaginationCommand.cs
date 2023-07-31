@@ -1,7 +1,7 @@
 ﻿using Application.Commands.Vm.PalletVm;
 using MediatR;
 
-namespace Application.Commands.PalletsCommands
+namespace Application.Commands.PalletsCommands.GetListWithPagination
 {
     public class GetPalletListWithPaginationCommand : IRequest<PalletListVm>
     {

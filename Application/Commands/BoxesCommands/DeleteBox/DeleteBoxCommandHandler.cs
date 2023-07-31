@@ -1,11 +1,10 @@
-﻿using Application.Commands.BoxesCommands.DeleteBox;
-using Application.Common.Exceptions;
+﻿using Application.Common.Exceptions;
 using DbStorageContext;
 using MediatR;
 
-namespace Application.Handlers.BoxHandler
+namespace Application.Commands.BoxesCommands.DeleteBox
 {
-    public class DeleteBoxCommandHandler: IRequestHandler<DeleteBoxCommand>
+    public class DeleteBoxCommandHandler : IRequestHandler<DeleteBoxCommand>
     {
         private readonly StorageDbContext _dbContext;
 
@@ -17,10 +16,10 @@ namespace Application.Handlers.BoxHandler
         public async Task<Unit> Handle(DeleteBoxCommand request, CancellationToken cancellationToken)
         {
             var box = await _dbContext.Boxes
-                .FindAsync(new object[] { request.BoxId},cancellationToken);
+                .FindAsync(new object[] { request.BoxId }, cancellationToken);
             if (box == null)
             {
-                throw new NotFoundException(nameof(Box),request.BoxId);
+                throw new NotFoundException(nameof(Box), request.BoxId);
             }
 
             _dbContext.Boxes.Remove(box);

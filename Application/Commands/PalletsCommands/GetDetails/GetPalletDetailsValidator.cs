@@ -1,11 +1,10 @@
-﻿using Application.Commands.BoxesCommands.GetDetails;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace Application.Commands.PalletsCommands.Validation.PalletValidation
+namespace Application.Commands.PalletsCommands.GetDetails
 {
     public class GetPalletDetailsValidator : AbstractValidator<GetPalletDetailsCommand>
     {
-        public GetPalletDetailsValidator() 
+        public GetPalletDetailsValidator()
         {
             RuleFor(pallet => pallet.Id).NotEmpty().GreaterThan(0);
         }

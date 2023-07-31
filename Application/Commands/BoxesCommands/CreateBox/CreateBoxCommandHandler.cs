@@ -1,8 +1,7 @@
-﻿using Application.Commands.BoxesCommands.CreateBox;
-using DbStorageContext;
+﻿using DbStorageContext;
 using MediatR;
 
-namespace Application.Handlers.BoxHandler
+namespace Application.Commands.BoxesCommands.CreateBox
 {
     public class CreateBoxCommandHandler
         : IRequestHandler<CreateBoxCommand, int>
@@ -24,7 +23,7 @@ namespace Application.Handlers.BoxHandler
                 Weight = request.BoxWeight,
                 ExpiryDate = request.BoxExpiryDate,
                 DateOfProduction = request.BoxExpiryDate,
-                PalletId=request.PalletId,
+                PalletId = request.PalletId,
             };
             await _dbContext.AddAsync(box, cancellationToken);
             await _dbContext.SaveChangesAsync();

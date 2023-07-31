@@ -4,9 +4,8 @@ using MediatR;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using Application.Commands.Vm.BoxVm;
-using Application.Commands.BoxesCommands.GetList;
 
-namespace Application.Handlers.BoxHandler
+namespace Application.Commands.BoxesCommands.GetList
 {
     public class GetBoxListQueryHandler
         : IRequestHandler<GetBoxListCommand, BoxListVm>

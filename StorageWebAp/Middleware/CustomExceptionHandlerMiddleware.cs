@@ -1,7 +1,4 @@
 ﻿using Application.Common.Exceptions;
-using Microsoft.Net.Http.Headers;
-using System.ComponentModel.DataAnnotations;
-using FluentValidation;
 using System.Net;
 using System.Text.Json;
 using ValidationException = FluentValidation.ValidationException;

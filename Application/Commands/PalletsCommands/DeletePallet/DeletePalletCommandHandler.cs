@@ -1,5 +1,4 @@
-﻿using Application.Commands.PalletsCommands.DeletePallet;
-using Application.Common.Exceptions;
+﻿using Application.Common.Exceptions;
 using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -9,13 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Handlers.PalletHandler
+namespace Application.Commands.PalletsCommands.DeletePallet
 {
-    public class DeletePalletCommandHandler: IRequestHandler<DeletePalletCommand>
+    public class DeletePalletCommandHandler : IRequestHandler<DeletePalletCommand>
     {
         private readonly StorageDbContext _dbContext;
 
-        public DeletePalletCommandHandler(StorageDbContext dbInitializer)=>
+        public DeletePalletCommandHandler(StorageDbContext dbInitializer) =>
             _dbContext = dbInitializer;
 
         public async Task<Unit> Handle(DeletePalletCommand request,

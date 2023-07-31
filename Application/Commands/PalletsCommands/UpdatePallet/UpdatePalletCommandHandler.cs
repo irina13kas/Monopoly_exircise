@@ -2,9 +2,8 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Application.Common.Exceptions;
-using Application.Commands.PalletsCommands.UpdatePallet;
 
-namespace Application.Handlers.PalletHandler
+namespace Application.Commands.PalletsCommands.UpdatePallet
 {
     public class UpdatePalletCommandHandler
         : IRequestHandler<UpdatePalletCommand>

@@ -1,12 +1,11 @@
-﻿using Application.Commands.BoxesCommands.GetDetails;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace Application.Commands.BoxesCommands.BoxValidation
+namespace Application.Commands.BoxesCommands.GetDetails
 {
     public class GetBoxDetailsCommandValidator : AbstractValidator<GetBoxDetailsCommand>
     {
         public GetBoxDetailsCommandValidator()
-        { 
+        {
             RuleFor(box =>
                 box.Id).NotEmpty().GreaterThan(0);
             RuleFor(box =>

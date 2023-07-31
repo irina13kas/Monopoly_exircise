@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Commands.PalletsCommands.Validation
+namespace Application.Commands.PalletsCommands.GetListWithPagination
 {
     public class GetPalletListWithPagination : AbstractValidator<GetPalletListWithPaginationCommand>
     {

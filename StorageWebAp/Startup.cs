@@ -1,8 +1,8 @@
 ﻿using Application;
 using Application.Common.Mappings;
 using DbStorageContext;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi.Models;
-using StorageWebApi.Middleware;
 using System.Reflection;
 
 namespace StorageWebApi
@@ -27,9 +27,13 @@ namespace StorageWebApi
             services.AddControllers();
             services.AddSwaggerGen(options =>
             {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                options.IncludeXmlComments(xmlPath);
+
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "StorageWebApi",
+                    Title = "Storage.WebApi",
                     Version = "v1"
                 });
             });
@@ -46,8 +50,18 @@ namespace StorageWebApi
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            //app.UseExceptionHandler();
+            
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(config =>
+            {
+                config.RoutePrefix = string.Empty;
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "Storage API");
+            });
 
             app.UseRouting();
             app.UseHttpsRedirection();

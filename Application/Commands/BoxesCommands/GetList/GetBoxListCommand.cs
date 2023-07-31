@@ -1,7 +1,7 @@
 ﻿using Application.Commands.Vm.BoxVm;
 using MediatR;
 
-namespace Application.Commands.BoxesCommands
+namespace Application.Commands.BoxesCommands.GetList
 {
     public class GetBoxListCommand : IRequest<BoxListVm>
     {

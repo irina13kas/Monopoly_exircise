@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Commands.BoxesCommands.BoxValidation
+namespace Application.Commands.BoxesCommands.UpdateBox
 {
     public class UpdateBoxCommandValidator : AbstractValidator<UpdateBoxCommand>
     {
-        public UpdateBoxCommandValidator() 
+        public UpdateBoxCommandValidator()
         {
             RuleFor(updateBoxCommand =>
                 updateBoxCommand.BoxHeight).NotEmpty().GreaterThan(0);

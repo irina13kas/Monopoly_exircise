@@ -1,8 +1,7 @@
-﻿using Application.Commands.PalletsCommands.CreatePallet;
-using DbStorageContext;
+﻿using DbStorageContext;
 using MediatR;
 
-namespace Application.Handlers.PalletHandler
+namespace Application.Commands.PalletsCommands.CreatePallet
 {
     public class CreatePalletCommandHandler
         : IRequestHandler<CreatePalletCommand, int>

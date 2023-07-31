@@ -1,12 +1,11 @@
-﻿using Application.Commands.BoxesCommands.GetDetails;
-using Application.Commands.Vm.BoxVm;
+﻿using Application.Commands.Vm.BoxVm;
 using Application.Common.Exceptions;
 using AutoMapper;
 using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Handlers.BoxHandler
+namespace Application.Commands.BoxesCommands.GetDetails
 {
     public class GetBoxDetailQueryHandler
         : IRequestHandler<GetBoxDetailsCommand, BoxVm>

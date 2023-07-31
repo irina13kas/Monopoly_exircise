@@ -1,14 +1,17 @@
-﻿using Application.Commands.PalletsCommands;
+﻿using Application.Commands.PalletsCommands.GetListWithPagination;
 using Application.Commands.PalletsCommands.CreatePallet;
 using Application.Commands.PalletsCommands.UpdatePallet;
 using Application.Commands.Vm.PalletVm;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
 using StorageWebApi.Models.Pallet;
+using Application.Commands.PalletsCommands.GetList;
+using Application.Commands.PalletsCommands.GetDetails;
+using Application.Commands.PalletsCommands.DeletePallet;
 
 namespace StorageWebApi.Controllers
 {
+    [Produces("application/json")]
     [ApiController]
     [Route("api/[controller]")]
     public class PalletController: BaseController
@@ -20,6 +23,10 @@ namespace StorageWebApi.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Get all exist pallets
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [ProducesResponseType(typeof(ActionResult<PalletListVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -30,7 +37,13 @@ namespace StorageWebApi.Controllers
             return Ok(vm);
         }
 
-        [HttpGet("{limit, offset}")]
+        /// <summary>
+        /// Get list of pallets with pagination
+        /// </summary>
+        /// <param name="limit"></param>
+        /// <param name="offset"></param>
+        /// <returns></returns>
+        [HttpGet("{limit} {offset}")]
         [ProducesResponseType(typeof(ActionResult<PalletListVm>), StatusCodes.Status200OK)]
         public async Task<ActionResult<PalletListVm>> GetPalletsWithPagination(int limit, int offset)
         {
@@ -43,6 +56,11 @@ namespace StorageWebApi.Controllers
             return Ok();
         } 
 
+        /// <summary>
+        /// get information about some pallet
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ActionResult<PalletVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -58,6 +76,11 @@ namespace StorageWebApi.Controllers
             return Ok(vm);
         }
 
+        /// <summary>
+        /// create new pallet
+        /// </summary>
+        /// <param name="createPalletDto"></param>
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(typeof(ActionResult<int>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ActionResult<int>), StatusCodes.Status201Created)]
@@ -68,6 +91,11 @@ namespace StorageWebApi.Controllers
             return Ok(palletId);
         }
 
+        /// <summary>
+        /// update information about some pallet by id
+        /// </summary>
+        /// <param name="updatePalletDto"></param>
+        /// <returns></returns>
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -79,6 +107,11 @@ namespace StorageWebApi.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// delete some pallet by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

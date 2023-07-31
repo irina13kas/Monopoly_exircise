@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Commands.BoxesCommands
+namespace Application.Commands.BoxesCommands.DeleteBox
 {
     public class DeleteBoxCommand : IRequest
     {

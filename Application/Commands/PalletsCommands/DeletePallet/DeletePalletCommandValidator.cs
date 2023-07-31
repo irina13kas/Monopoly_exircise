@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Commands.PalletsCommands.Validation.PalletValidation
+namespace Application.Commands.PalletsCommands.DeletePallet
 {
     public class DeletePalletCommandValidator : AbstractValidator<DeletePalletCommand>
     {

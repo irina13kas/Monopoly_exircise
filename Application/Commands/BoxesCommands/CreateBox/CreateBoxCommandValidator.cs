@@ -1,7 +1,6 @@
-﻿using Application.Commands.BoxesCommands;
-using FluentValidation;
+﻿using FluentValidation;
 
-namespace Application.Commands.BoxesCommands.BoxValidation
+namespace Application.Commands.BoxesCommands.CreateBox
 {
     public class CreateBoxCommandValidator : AbstractValidator<CreateBoxCommand>
     {

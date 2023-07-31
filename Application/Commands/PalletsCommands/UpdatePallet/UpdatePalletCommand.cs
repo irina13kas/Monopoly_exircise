@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace Application.Commands.PalletsCommands
+namespace Application.Commands.PalletsCommands.UpdatePallet
 {
-    public class UpdatePalletCommand: IRequest
+    public class UpdatePalletCommand : IRequest
     {
         public int PalletId { get; set; }
         public decimal PalletHeight { get; set; }

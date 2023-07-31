@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace Application.Commands.BoxesCommands
+namespace Application.Commands.BoxesCommands.CreateBox
 {
-    public class CreateBoxCommand:IRequest<int>
+    public class CreateBoxCommand : IRequest<int>
     {
         public decimal BoxHeight { get; set; }
         public decimal BoxWidth { get; set; }

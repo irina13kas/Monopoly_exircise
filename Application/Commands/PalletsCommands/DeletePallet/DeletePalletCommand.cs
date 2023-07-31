@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Commands.PalletsCommands
+namespace Application.Commands.PalletsCommands.DeletePallet
 {
     public class DeletePalletCommand : IRequest
     {
