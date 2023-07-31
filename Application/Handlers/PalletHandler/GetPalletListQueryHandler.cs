@@ -23,6 +23,7 @@ namespace Application.Handlers.PalletHandler
         {
             var palletQuery = await _dbContext.Pallets
                 .ProjectTo<PalletLookupDto>(_mapper.ConfigurationProvider)
+                .OrderBy(x => x.Id)
                 .ToListAsync(cancellationToken);
             return new PalletListVm { Pallets = palletQuery };
         }

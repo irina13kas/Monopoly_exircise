@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application.Handlers.BoxHandler
 {
-    public class GetListBoxDetailQueryHandler
+    public class GetBoxDetailQueryHandler
         : IRequestHandler<GetBoxDetailsCommand, BoxVm>
     {
         private readonly StorageDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public GetListBoxDetailQueryHandler(StorageDbContext dbContext, IMapper mapper)
+        public GetBoxDetailQueryHandler(StorageDbContext dbContext, IMapper mapper)
         {
             (_dbContext, _mapper) = (dbContext, mapper);
         }

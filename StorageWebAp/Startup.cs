@@ -1,6 +1,8 @@
 ﻿using Application;
 using Application.Common.Mappings;
 using DbStorageContext;
+using Microsoft.OpenApi.Models;
+using StorageWebApi.Middleware;
 using System.Reflection;
 
 namespace StorageWebApi
@@ -23,7 +25,14 @@ namespace StorageWebApi
             services.AddApplication();
             services.AddPersistance(Configuration);
             services.AddControllers();
-            //4 доступ должен быть ограничен
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "StorageWebApi",
+                    Version = "v1"
+                });
+            });
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", policy =>
@@ -33,27 +42,15 @@ namespace StorageWebApi
                     policy.AllowAnyOrigin();
                 });
             });
-
-            services.AddMvc();
-            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
+
             app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseCors("AllowAll");
 
             app.UseEndpoints(endpoints =>
             {

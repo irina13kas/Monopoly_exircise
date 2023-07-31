@@ -2,10 +2,12 @@
 using Application.Commands.Vm.PalletVm;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using StorageWebApi.Models.Pallet;
 
 namespace StorageWebApi.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
     public class PalletController: BaseController
     {
@@ -17,6 +19,8 @@ namespace StorageWebApi.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(ActionResult<PalletListVm>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<PalletListVm>> GetAllPallets()
         {
             var query = new GetPalletListCommand();
@@ -24,7 +28,23 @@ namespace StorageWebApi.Controllers
             return Ok(vm);
         }
 
+        [HttpGet("{limit, offset}")]
+        [ProducesResponseType(typeof(ActionResult<PalletListVm>), StatusCodes.Status200OK)]
+        public async Task<ActionResult<PalletListVm>> GetPalletsWithPagination(int limit, int offset)
+        {
+            var query = new GetPalletListWithPaginationCommand
+            {
+                Limit = limit,
+                Offset = offset
+            };
+            var vm = await Mediator.Send(query);
+            return Ok();
+        } 
+
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(ActionResult<PalletVm>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status410Gone)]
         public async Task<ActionResult<PalletVm>> GetPallet(int id)
         {
             var query = new GetPalletDetailsCommand
@@ -37,6 +57,8 @@ namespace StorageWebApi.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(ActionResult<int>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ActionResult<int>), StatusCodes.Status201Created)]
         public async Task<ActionResult<int>> CreatePallet([FromBody] CreatePalletDto createPalletDto)
         {
             var command = _mapper.Map<CreatePalletCommand>(createPalletDto);
@@ -45,6 +67,8 @@ namespace StorageWebApi.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> UpdatePallet([FromBody] UpdatePalletDto updatePalletDto)
         {
             var command = _mapper.Map<UpdatePalletCommand>(updatePalletDto);
@@ -54,6 +78,9 @@ namespace StorageWebApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status410Gone)]
         public async Task<IActionResult> DeletePallet([FromBody] int id)
         {
             var command = new DeletePalletCommand
