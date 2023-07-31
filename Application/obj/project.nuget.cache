@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "X47LLAghEQs+cv/Ifw34JCIxfYvvEj16YdS0jv/K7kZnlbUeDXArOw1XOgzmh+J9nvN/W9n7APOmgZc5+mqV4Q==",
+  "dgSpecHash": "6Qqn1VvAPGGIlZBicA0HHb0iOmHdGWzvj9DdBd/TVLKqnD2gF/aqkThaYGuY+tQ/5i2NRgM+YDlWGk1A2r7GVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\irina.kasianova\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
+    "C:\\Users\\irina.kasianova\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.6.0\\fluentvalidation.dependencyinjectionextensions.11.6.0.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\irina.kasianova\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

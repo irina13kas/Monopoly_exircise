@@ -33,6 +33,9 @@ namespace StorageWebApi
                     policy.AllowAnyOrigin();
                 });
             });
+
+            services.AddMvc();
+            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,6 +43,13 @@ namespace StorageWebApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
             app.UseRouting();
             app.UseHttpsRedirection();

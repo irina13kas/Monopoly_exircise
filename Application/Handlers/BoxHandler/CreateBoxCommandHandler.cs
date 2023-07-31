@@ -22,9 +22,9 @@ namespace Application.Handlers.BoxHandler
                 Width = request.BoxWidth,
                 Depth = request.BoxDepth,
                 Weight = request.BoxWeight,
-                // тут должно заполняться хотя бы одно поле
                 ExpiryDate = request.BoxExpiryDate,
                 DateOfProduction = request.BoxExpiryDate,
+                PalletId=request.PalletId,
             };
             await _dbContext.AddAsync(box, cancellationToken);
             await _dbContext.SaveChangesAsync();

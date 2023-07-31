@@ -4,7 +4,7 @@ namespace DbStorageContext
 {
     public class StorageDbContext: DbContext, IStorageDbContext
     {
-        private string connectionString = Path.GetFullPath(Path.Combine(@"..\..\..\..\")) + @"FileStorage\Pallets.db";
+        private string connectionString = Path.GetFullPath(Path.Combine(@"..\..\..\..\..\")) + @"FileStorage\Pallets.db";
         
         public virtual DbSet<Pallet> Pallets { get; set; }
         public virtual DbSet<Box> Boxes { get; set; }

@@ -10,6 +10,6 @@ namespace Application.Commands.BoxesCommands
         public decimal BoxWeight { get; set; }
         public DateOnly? BoxExpiryDate { get; set; }
         public DateOnly? BoxDateOfProduction { get; set; }
-
+        public int PalletId { get; set; }
     }
 }

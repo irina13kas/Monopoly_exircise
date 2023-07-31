@@ -87,3 +87,5 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\n
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.pdb
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.genruntimeconfig.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\ref\StorageWebApi.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
