@@ -26,7 +26,7 @@ namespace StorageWebApi.Controllers
         /// get all boxes in pallet
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("{palletId}")]
         [ProducesResponseType(typeof(ActionResult<BoxListVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<BoxListVm>> GetAllBoxes()
