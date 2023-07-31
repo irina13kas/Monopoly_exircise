@@ -1,4 +1,6 @@
 ﻿using Application.Commands.PalletsCommands;
+using Application.Commands.PalletsCommands.CreatePallet;
+using Application.Commands.PalletsCommands.UpdatePallet;
 using Application.Commands.Vm.PalletVm;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;

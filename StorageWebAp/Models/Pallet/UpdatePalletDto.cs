@@ -1,4 +1,4 @@
-﻿using Application.Commands.PalletsCommands;
+﻿using Application.Commands.PalletsCommands.UpdatePallet;
 using Application.Common.Mappings;
 using AutoMapper;
 

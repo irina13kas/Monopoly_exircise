@@ -1,4 +1,4 @@
-﻿using Application.Commands.PalletsCommands;
+﻿using Application.Commands.PalletsCommands.GetListWithPagination;
 using Application.Commands.Vm.PalletVm;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;

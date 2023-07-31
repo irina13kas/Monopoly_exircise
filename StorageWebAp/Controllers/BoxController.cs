@@ -1,4 +1,6 @@
 ﻿using Application.Commands.BoxesCommands;
+using Application.Commands.BoxesCommands.CreateBox;
+using Application.Commands.BoxesCommands.UpdateBox;
 using Application.Commands.Vm.BoxVm;
 using Application.Commands.Vm.PalletVm;
 using AutoMapper;

@@ -1,4 +1,4 @@
-﻿using Application.Commands.BoxesCommands;
+﻿using Application.Commands.BoxesCommands.CreateBox;
 using Application.Common.Mappings;
 using AutoMapper;
 

@@ -1,4 +1,4 @@
-﻿using Application.Commands.BoxesCommands;
+﻿using Application.Commands.BoxesCommands.DeleteBox;
 using Application.Common.Exceptions;
 using DbStorageContext;
 using MediatR;

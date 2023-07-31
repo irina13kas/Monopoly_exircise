@@ -1,4 +1,4 @@
-﻿using Application.Commands.BoxesCommands;
+﻿using Application.Commands.BoxesCommands.GetDetails;
 using Application.Commands.Vm.BoxVm;
 using Application.Common.Exceptions;
 using AutoMapper;

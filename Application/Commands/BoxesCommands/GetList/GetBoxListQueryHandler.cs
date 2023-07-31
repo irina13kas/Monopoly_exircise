@@ -4,7 +4,7 @@ using MediatR;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using Application.Commands.Vm.BoxVm;
-using Application.Commands.BoxesCommands;
+using Application.Commands.BoxesCommands.GetList;
 
 namespace Application.Handlers.BoxHandler
 {

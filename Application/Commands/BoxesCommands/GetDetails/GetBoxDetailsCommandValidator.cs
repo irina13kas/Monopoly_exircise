@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using Application.Commands.BoxesCommands.GetDetails;
+using FluentValidation;
 
 namespace Application.Commands.BoxesCommands.BoxValidation
 {

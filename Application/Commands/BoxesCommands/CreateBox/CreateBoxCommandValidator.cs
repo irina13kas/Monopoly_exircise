@@ -5,6 +5,7 @@ namespace Application.Commands.BoxesCommands.BoxValidation
 {
     public class CreateBoxCommandValidator : AbstractValidator<CreateBoxCommand>
     {
+        //добавить проверку на соответствие параметров коробки в паллету
         public CreateBoxCommandValidator()
         {
             RuleFor(createBoxCommand =>

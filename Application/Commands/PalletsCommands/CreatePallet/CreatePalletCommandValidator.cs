@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using Application.Commands.PalletsCommands.CreatePallet;
+using FluentValidation;
 
 namespace Application.Commands.PalletsCommands.Validation.PalletValidation
 {

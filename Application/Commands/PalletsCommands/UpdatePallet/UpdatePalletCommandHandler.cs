@@ -1,8 +1,8 @@
-﻿using Application.Commands.PalletsCommands;
-using DbStorageContext;
+﻿using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Application.Common.Exceptions;
+using Application.Commands.PalletsCommands.UpdatePallet;
 
 namespace Application.Handlers.PalletHandler
 {

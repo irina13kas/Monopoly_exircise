@@ -1,4 +1,4 @@
-﻿using Application.Commands.PalletsCommands;
+﻿using Application.Commands.PalletsCommands.GetDetails;
 using Application.Commands.Vm.PalletVm;
 using Application.Common.Exceptions;
 using AutoMapper;

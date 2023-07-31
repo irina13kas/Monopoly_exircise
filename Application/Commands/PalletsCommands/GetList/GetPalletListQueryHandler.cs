@@ -4,7 +4,7 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using Application.Commands.Vm.PalletVm;
-using Application.Commands.PalletsCommands;
+using Application.Commands.PalletsCommands.GetList;
 
 namespace Application.Handlers.PalletHandler
 {

@@ -1,4 +1,4 @@
-﻿using Application.Commands.PalletsCommands;
+﻿using Application.Commands.PalletsCommands.DeletePallet;
 using Application.Common.Exceptions;
 using DbStorageContext;
 using MediatR;

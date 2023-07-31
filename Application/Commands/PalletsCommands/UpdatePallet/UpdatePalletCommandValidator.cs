@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Commands.PalletsCommands.Validation.PalletValidation
+namespace Application.Commands.PalletsCommands.UpdatePallet
 {
     public class UpdatePalletCommandValidator : AbstractValidator<UpdatePalletCommand>
     {
