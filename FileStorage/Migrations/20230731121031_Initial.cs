@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -35,7 +36,7 @@ namespace DbStorageContext.Migrations
                     Height = table.Column<decimal>(type: "TEXT", nullable: false),
                     Depth = table.Column<decimal>(type: "TEXT", nullable: false),
                     Weight = table.Column<decimal>(type: "TEXT", nullable: false),
-                    DateOfProdaction = table.Column<DateOnly>(type: "TEXT", nullable: true),
+                    DateOfProduction = table.Column<DateOnly>(type: "TEXT", nullable: true),
                     ExpiryDate = table.Column<DateOnly>(type: "TEXT", nullable: true),
                     PalletId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
