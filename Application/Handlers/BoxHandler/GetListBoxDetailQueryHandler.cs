@@ -1,23 +1,25 @@
-﻿using Application.Common.Exceptions;
+﻿using Application.Commands.BoxesCommands;
+using Application.Commands.Vm.BoxVm;
+using Application.Common.Exceptions;
 using AutoMapper;
 using DbStorageContext;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Application.Commands.Queries.GetBoxesList
+namespace Application.Handlers.BoxHandler
 {
     public class GetListBoxDetailQueryHandler
-        : IRequestHandler<GetBoxDetailsQuery, BoxVm>
+        : IRequestHandler<GetBoxDetailsCommand, BoxVm>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public GetListBoxDetailQueryHandler(DbInitializer dbContext, IMapper mapper)
+        public GetListBoxDetailQueryHandler(StorageDbContext dbContext, IMapper mapper)
         {
             (_dbContext, _mapper) = (dbContext, mapper);
         }
 
-        public async Task<BoxVm> Handle(GetBoxDetailsQuery request, CancellationToken cancellationToken)
+        public async Task<BoxVm> Handle(GetBoxDetailsCommand request, CancellationToken cancellationToken)
         {
             var box = await _dbContext.Boxes
                 .FirstOrDefaultAsync(box => box.Id == request.Id, cancellationToken);

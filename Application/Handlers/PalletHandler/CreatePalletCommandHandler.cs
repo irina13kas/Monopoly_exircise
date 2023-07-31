@@ -7,9 +7,9 @@ namespace Application.Handlers.PalletHandler
     public class CreatePalletCommandHandler
         : IRequestHandler<CreatePalletCommand, int>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public CreatePalletCommandHandler(DbInitializer dbContext)
+        public CreatePalletCommandHandler(StorageDbContext dbContext)
         {
             _dbContext = dbContext;
         }

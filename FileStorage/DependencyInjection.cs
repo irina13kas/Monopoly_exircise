@@ -9,12 +9,12 @@ namespace DbStorageContext
         public static IServiceCollection AddPersistance(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration["DbConnnection"];
-            services.AddDbContext<DbInitializer>(options =>
+            services.AddDbContext<StorageDbContext>(options =>
             {
                 options.UseSqlite(connectionString);
             });
             
-            services.AddScoped<DbInitializer>();
+            services.AddScoped<StorageDbContext>();
 
             return services;
         }

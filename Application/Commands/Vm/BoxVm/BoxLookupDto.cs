@@ -1,7 +1,7 @@
 ﻿using Application.Common.Mappings;
 using AutoMapper;
 
-namespace Application.Commands.Queries.GetBoxList
+namespace Application.Commands.Vm.BoxVm
 {
     public class BoxLookupDto : IMapWith<Box>
     {

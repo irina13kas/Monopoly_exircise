@@ -1,6 +1,4 @@
 using DbStorageContext;
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Hosting;
 using StorageWebApi;
 
 namespace StorageWebAp
@@ -15,10 +13,10 @@ namespace StorageWebAp
                 var serviceProvider = scope.ServiceProvider;
                 try
                 {
-                    var context = serviceProvider.GetRequiredService<DbInitializer>();
-                    DbInitializer db = new DbInitializer();
+                    var context = serviceProvider.GetRequiredService<StorageDbContext>();
+                    StorageDbContext db = new StorageDbContext();
                 }
-                catch(Exception exceprion){ }
+                catch (Exception exceprion) { }
             }
             host.Run();
         }

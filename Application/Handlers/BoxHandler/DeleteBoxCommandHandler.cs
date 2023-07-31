@@ -7,9 +7,9 @@ namespace Application.Handlers.BoxHandler
 {
     public class DeleteBoxCommandHandler: IRequestHandler<DeleteBoxCommand>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public DeleteBoxCommandHandler(DbInitializer dbContext)
+        public DeleteBoxCommandHandler(StorageDbContext dbContext)
         {
             _dbContext = dbContext;
         }

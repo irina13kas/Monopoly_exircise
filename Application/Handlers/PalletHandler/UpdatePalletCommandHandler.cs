@@ -9,9 +9,9 @@ namespace Application.Handlers.PalletHandler
     public class UpdatePalletCommandHandler
         : IRequestHandler<UpdatePalletCommand>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public UpdatePalletCommandHandler(DbInitializer dbContext) =>
+        public UpdatePalletCommandHandler(StorageDbContext dbContext) =>
             _dbContext = dbContext;
 
         public async Task<Unit> Handle(UpdatePalletCommand request, CancellationToken cancellationToken)

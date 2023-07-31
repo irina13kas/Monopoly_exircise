@@ -7,7 +7,7 @@ namespace Tests
 {
     public class UnitTests
     {
-        DbInitializer db = new DbInitializer();
+        StorageDbContext db = new StorageDbContext();
         Calculation cal = new Calculation();
         [Fact]
         public void AllBoxesLessThanPallet()

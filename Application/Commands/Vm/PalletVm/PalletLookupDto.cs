@@ -1,7 +1,7 @@
 ﻿using Application.Common.Mappings;
 using AutoMapper;
 
-namespace Application.Commands.Queries.GetPallets
+namespace Application.Commands.Vm.PalletVm
 {
     public class PalletLookupDto : IMapWith<Pallet>
     {

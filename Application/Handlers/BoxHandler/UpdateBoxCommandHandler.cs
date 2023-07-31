@@ -7,9 +7,9 @@ namespace Application.Handlers.BoxHandler
 {
     public class UpdateBoxCommandHandler : IRequestHandler<UpdateBoxCommand>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public UpdateBoxCommandHandler(DbInitializer dbContext)
+        public UpdateBoxCommandHandler(StorageDbContext dbContext)
         {
             _dbContext = dbContext;
         }

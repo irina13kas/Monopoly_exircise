@@ -2,17 +2,19 @@
 
 namespace DbStorageContext
 {
-    public class DbInitializer: DbContext
+    public class StorageDbContext: DbContext, IStorageDbContext
     {
         private string connectionString = Path.GetFullPath(Path.Combine(@"..\..\..\..\")) + @"FileStorage\Pallets.db";
         
-        public virtual DbSet<Pallet> Pallets => Set<Pallet>();
-        public virtual DbSet<Box> Boxes => Set<Box>();
+        public virtual DbSet<Pallet> Pallets { get; set; }
+        public virtual DbSet<Box> Boxes { get; set; }
 
-        public DbInitializer()
+        public StorageDbContext()
         {
             Database.EnsureCreated();
         }
+
+        public StorageDbContext(DbContextOptions<StorageDbContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

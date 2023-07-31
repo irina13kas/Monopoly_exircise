@@ -18,7 +18,7 @@ namespace StorageWebApi
             services.AddAutoMapper(config =>
             {
                 config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
-                config.AddProfile(new AssemblyMappingProfile(typeof(DbInitializer).Assembly));
+                config.AddProfile(new AssemblyMappingProfile(typeof(StorageDbContext).Assembly));
             });
             services.AddApplication();
             services.AddPersistance(Configuration);

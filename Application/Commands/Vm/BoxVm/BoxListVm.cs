@@ -1,6 +1,4 @@
-﻿
-
-namespace Application.Commands.Queries.GetBoxList
+﻿namespace Application.Commands.Vm.BoxVm
 {
     public class BoxListVm
     {

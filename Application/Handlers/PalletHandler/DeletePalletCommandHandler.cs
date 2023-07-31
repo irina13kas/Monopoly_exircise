@@ -13,9 +13,9 @@ namespace Application.Handlers.PalletHandler
 {
     public class DeletePalletCommandHandler: IRequestHandler<DeletePalletCommand>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public DeletePalletCommandHandler(DbInitializer dbInitializer)=>
+        public DeletePalletCommandHandler(StorageDbContext dbInitializer)=>
             _dbContext = dbInitializer;
 
         public async Task<Unit> Handle(DeletePalletCommand request,

@@ -3,21 +3,23 @@ using DbStorageContext;
 using MediatR;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
+using Application.Commands.Vm.BoxVm;
+using Application.Commands.BoxesCommands;
 
-namespace Application.Commands.Queries.GetBoxList
+namespace Application.Handlers.BoxHandler
 {
     public class GetBoxListQueryHandler
-        :IRequestHandler<GetBoxListQuery, BoxListVm>
+        : IRequestHandler<GetBoxListCommand, BoxListVm>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public GetBoxListQueryHandler(DbInitializer dbContext, IMapper mapper)
+        public GetBoxListQueryHandler(StorageDbContext dbContext, IMapper mapper)
         {
             (_dbContext, _mapper) = (dbContext, mapper);
         }
 
-        public async Task<BoxListVm> Handle(GetBoxListQuery request, CancellationToken cancellationToken)
+        public async Task<BoxListVm> Handle(GetBoxListCommand request, CancellationToken cancellationToken)
         {
             var boxQuery = await _dbContext.Boxes
                 .Where(box => box.PalletId == request.PalletId)

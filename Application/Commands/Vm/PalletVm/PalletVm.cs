@@ -2,7 +2,7 @@
 using AutoMapper;
 
 //2
-namespace Application.Commands.Queries.GetPalletsList
+namespace Application.Commands.Vm.PalletVm
 {
     public class PalletVm : IMapWith<Pallet>
     {

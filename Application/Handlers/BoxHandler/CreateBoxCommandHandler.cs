@@ -1,6 +1,4 @@
 ﻿using Application.Commands.BoxesCommands;
-using Application.Commands.PalletsCommands;
-using Application.Commands.Queries.GetPalletsList;
 using DbStorageContext;
 using MediatR;
 
@@ -9,9 +7,9 @@ namespace Application.Handlers.BoxHandler
     public class CreateBoxCommandHandler
         : IRequestHandler<CreateBoxCommand, int>
     {
-        private readonly DbInitializer _dbContext;
+        private readonly StorageDbContext _dbContext;
 
-        public CreateBoxCommandHandler(DbInitializer dbContext)
+        public CreateBoxCommandHandler(StorageDbContext dbContext)
         {
             _dbContext = dbContext;
         }
