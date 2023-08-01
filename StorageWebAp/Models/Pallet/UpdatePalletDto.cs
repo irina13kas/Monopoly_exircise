@@ -13,13 +13,13 @@ namespace StorageWebApi.Models.Pallet
         public void Mapping(Profile profile)
         {
             profile.CreateMap<UpdatePalletDto, UpdatePalletCommand>()
-                .ForMember(palletCommand => palletCommand.PalletId,
+                .ForMember(palletCommand => palletCommand.Id,
                     opt => opt.MapFrom(palletDto => palletDto.Id))
-                .ForMember(palletCommand => palletCommand.PalletHeight,
+                .ForMember(palletCommand => palletCommand.Height,
                     opt => opt.MapFrom(palletDto => palletDto.Height))
-                .ForMember(palletCommand => palletCommand.PalletWidth,
+                .ForMember(palletCommand => palletCommand.Width,
                     opt => opt.MapFrom(palletDto => palletDto.Width))
-                .ForMember(palletCommand => palletCommand.PalletDepth,
+                .ForMember(palletCommand => palletCommand.Depth,
                     opt => opt.MapFrom(palletDto => palletDto.Depth));
         }
     }

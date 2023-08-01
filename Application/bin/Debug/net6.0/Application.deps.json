@@ -9,6 +9,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "BusinessLogic": "1.0.0",
           "DbStorageContext": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.DependencyInjectionExtensions": "11.6.0",
@@ -531,6 +532,16 @@
           }
         }
       },
+      "BusinessLogic/1.0.0": {
+        "dependencies": {
+          "DbStorageContext": "1.0.0",
+          "FileStorageContex": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "BusinessLogic.dll": {}
+        }
+      },
       "DbStorageContext/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.9",
@@ -831,6 +842,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DbStorageContext/1.0.0": {
       "type": "project",

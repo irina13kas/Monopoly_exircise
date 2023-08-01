@@ -750,6 +750,21 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DbStorageContext": "1.0.0",
+          "FileStorageContex": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
       "DbStorageContext/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -765,6 +780,22 @@
         },
         "runtime": {
           "bin/placeholder/DbStorageContext.dll": {}
+        }
+      },
+      "FileStorageContex/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
+          "Model": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/FileStorageContex.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileStorageContex.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -1804,10 +1835,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
+    },
     "DbStorageContext/1.0.0": {
       "type": "project",
       "path": "../FileStorage/DbStorageContext.csproj",
       "msbuildProject": "../FileStorage/DbStorageContext.csproj"
+    },
+    "FileStorageContex/1.0.0": {
+      "type": "project",
+      "path": "../FileStorage/FileStorageContex.csproj",
+      "msbuildProject": "../FileStorage/FileStorageContex.csproj"
     },
     "Model/1.0.0": {
       "type": "project",
@@ -1818,6 +1859,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
+      "BusinessLogic >= 1.0.0",
       "DbStorageContext >= 1.0.0",
       "FluentValidation >= 11.6.0",
       "FluentValidation.DependencyInjectionExtensions >= 11.6.0",
@@ -1859,6 +1901,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
+            },
             "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
               "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
             },

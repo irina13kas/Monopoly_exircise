@@ -100,3 +100,5 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\n
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\ref\StorageWebApi.dll
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\bin\Debug\net6.0\StorageWebApi.xml
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.xml
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\bin\Debug\net6.0\BusinessLogic.dll
+C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\bin\Debug\net6.0\BusinessLogic.pdb

@@ -8,8 +8,6 @@ namespace Application.Commands.BoxesCommands.GetDetails
         {
             RuleFor(box =>
                 box.Id).NotEmpty().GreaterThan(0);
-            RuleFor(box =>
-                box.PalletId).NotEmpty().GreaterThan(0);
         }
     }
 }

@@ -18,21 +18,21 @@ namespace StorageWebApi.Models.Box
         public void Mapping(Profile profile)
         {
             profile.CreateMap<UpdateBoxDto, UpdateBoxCommand>()
-                .ForMember(boxCommand => boxCommand.BoxId,
+                .ForMember(boxCommand => boxCommand.Id,
                     opt => opt.MapFrom(boxDto => boxDto.Id))
                 .ForMember(boxCommand => boxCommand.PalletId,
                     opt => opt.MapFrom(boxDto => boxDto.PalletId))
-                .ForMember(boxCommand => boxCommand.BoxHeight,
+                .ForMember(boxCommand => boxCommand.Height,
                     opt => opt.MapFrom(boxDto => boxDto.Height))
-                .ForMember(boxCommand => boxCommand.BoxWidth,
+                .ForMember(boxCommand => boxCommand.Width,
                     opt => opt.MapFrom(boxDto => boxDto.Width))
-                .ForMember(boxCommand => boxCommand.BoxDepth,
+                .ForMember(boxCommand => boxCommand.Depth,
                     opt => opt.MapFrom(boxDto => boxDto.Depth))
-                .ForMember(boxCommand => boxCommand.BoxWeight,
+                .ForMember(boxCommand => boxCommand.Weight,
                     opt => opt.MapFrom(boxDto => boxDto.Weight))
-                .ForMember(boxCommand => boxCommand.BoxExpiryDate,
+                .ForMember(boxCommand => boxCommand.ExpiryDate,
                     opt => opt.MapFrom(boxDto => boxDto.ExpiryDate))
-                .ForMember(boxCommand => boxCommand.BoxDateOfProduction,
+                .ForMember(boxCommand => boxCommand.DateOfProduction,
                     opt => opt.MapFrom(boxDto => boxDto.DateOfProduction));
         }
     }

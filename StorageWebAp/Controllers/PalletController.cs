@@ -102,9 +102,8 @@ namespace StorageWebApi.Controllers
         public async Task<IActionResult> UpdatePallet([FromBody] UpdatePalletDto updatePalletDto)
         {
             var command = _mapper.Map<UpdatePalletCommand>(updatePalletDto);
-            command.PalletId = PalletId;
             await Mediator.Send(command);
-            return NoContent();
+            return Ok();
         }
 
         /// <summary>
@@ -116,14 +115,14 @@ namespace StorageWebApi.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status410Gone)]
-        public async Task<IActionResult> DeletePallet([FromBody] int id)
+        public async Task<IActionResult> DeletePallet(int id)
         {
             var command = new DeletePalletCommand
             {
-                PalletId = id
+                Id = id
             };
             await Mediator.Send(command);
-            return NoContent();
+            return Ok();
         }
     }
 }

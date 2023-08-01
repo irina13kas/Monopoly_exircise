@@ -4,13 +4,13 @@
         <name>StorageWebApi</name>
     </assembly>
     <members>
-        <member name="M:StorageWebApi.Controllers.BoxController.GetAllBoxes">
+        <member name="M:StorageWebApi.Controllers.BoxController.GetAllBoxes(System.Int32)">
             <summary>
-            get all boxes in pallet
+            get all boxes from pallet
             </summary>
             <returns></returns>
         </member>
-        <member name="M:StorageWebApi.Controllers.BoxController.GetBox(System.Int32,System.Int32)">
+        <member name="M:StorageWebApi.Controllers.BoxController.GetBox(System.Int32)">
             <summary>
             get information about some box by id
             </summary>

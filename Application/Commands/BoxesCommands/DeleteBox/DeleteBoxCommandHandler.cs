@@ -13,24 +13,17 @@ namespace Application.Commands.BoxesCommands.DeleteBox
             _dbContext = dbContext;
         }
 
-        public async Task<Unit> Handle(DeleteBoxCommand request, CancellationToken cancellationToken)
+        async Task IRequestHandler<DeleteBoxCommand>.Handle(DeleteBoxCommand request, CancellationToken cancellationToken)
         {
             var box = await _dbContext.Boxes
-                .FindAsync(new object[] { request.BoxId }, cancellationToken);
+                .FindAsync(new object[] { request.Id }, cancellationToken);
             if (box == null)
             {
-                throw new NotFoundException(nameof(Box), request.BoxId);
+                throw new NotFoundException(nameof(Box), request.Id);
             }
 
             _dbContext.Boxes.Remove(box);
             await _dbContext.SaveChangesAsync();
-
-            return Unit.Value;
-        }
-
-        Task IRequestHandler<DeleteBoxCommand>.Handle(DeleteBoxCommand request, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
         }
     }
 }

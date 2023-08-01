@@ -1,31 +1,28 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Commands.BoxesCommands.UpdateBox
 {
     public class UpdateBoxCommandValidator : AbstractValidator<UpdateBoxCommand>
     {
+        private readonly DateTime TodayConst = DateTime.Today;
+
         public UpdateBoxCommandValidator()
         {
             RuleFor(updateBoxCommand =>
-                updateBoxCommand.BoxHeight).NotEmpty().GreaterThan(0);
+                updateBoxCommand.Height).NotEmpty().GreaterThan(0);
             RuleFor(updateBoxCommand =>
-                updateBoxCommand.BoxWidth).NotEmpty().GreaterThan(0);
+                updateBoxCommand.Width).NotEmpty().GreaterThan(0);
             RuleFor(updateBoxCommand =>
-                updateBoxCommand.BoxDepth).NotEmpty().GreaterThan(0);
+                updateBoxCommand.Depth).NotEmpty().GreaterThan(0);
             RuleFor(updateBoxCommand =>
-               updateBoxCommand.BoxWeight).NotEmpty().GreaterThan(0);
+               updateBoxCommand.Weight).NotEmpty().GreaterThan(0);
             RuleFor(updateBoxCommand =>
-                updateBoxCommand.BoxExpiryDate).NotEmpty();
-            RuleFor(updateBoxCommand =>
-                updateBoxCommand.BoxDateOfProduction).NotEmpty()
-                    .When(updateBoxCommand => updateBoxCommand.BoxExpiryDate == null);
+                updateBoxCommand.ExpiryDate).NotEmpty();
+            RuleFor(createBoxCommand =>
+               createBoxCommand.DateOfProduction).NotNull()
+                   .When(createBoxCommand => createBoxCommand.ExpiryDate == null).LessThan(DateOnly.FromDateTime(TodayConst));
             RuleFor(updateBoxCommand => updateBoxCommand.PalletId).NotEmpty().GreaterThan(0);
-            RuleFor(updateBoxCommand => updateBoxCommand.BoxId).NotEmpty().GreaterThan(0);
+            RuleFor(updateBoxCommand => updateBoxCommand.Id).NotEmpty().GreaterThan(0);
         }
     }
 }

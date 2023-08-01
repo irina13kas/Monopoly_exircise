@@ -23,17 +23,17 @@ namespace StorageWebApi.Controllers
         }
 
         /// <summary>
-        /// get all boxes in pallet
+        /// get all boxes from pallet
         /// </summary>
         /// <returns></returns>
-        [HttpGet("{palletId}")]
+        [HttpGet("palletId={palletId}")]
         [ProducesResponseType(typeof(ActionResult<BoxListVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<BoxListVm>> GetAllBoxes()
+        public async Task<ActionResult<BoxListVm>> GetAllBoxes(int palletId)
         {
             var query = new GetBoxListCommand
             {
-                PalletId = PalletId
+                PalletId = palletId
             };
             var vm = await Mediator.Send(query);
             return Ok(vm);
@@ -45,16 +45,15 @@ namespace StorageWebApi.Controllers
         /// <param name="id"></param>
         /// <param name="palletId"></param>
         /// <returns></returns>
-        [HttpGet("{id} {palletId}")]
+        [HttpGet("boxId={id}")]
         [ProducesResponseType(typeof(ActionResult<BoxVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status410Gone)]
-        public async Task<ActionResult<BoxVm>> GetBox(int id, int palletId)
+        public async Task<ActionResult<BoxVm>> GetBox(int id)
         {
             var query = new GetBoxDetailsCommand
             {
-                Id = id,
-                PalletId = palletId
+                Id = id
             };
             var vm = await Mediator.Send(query);
             return Ok(vm);
@@ -86,9 +85,8 @@ namespace StorageWebApi.Controllers
         public async Task<IActionResult> UpdateBox([FromBody] UpdateBoxDto updateBoxDto)
         {
             var command = _mapper.Map<UpdateBoxCommand>(updateBoxDto);
-            command.BoxId = BoxId;
             await Mediator.Send(command);
-            return NoContent();
+            return Ok();
         }
 
         /// <summary>
@@ -100,14 +98,14 @@ namespace StorageWebApi.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status410Gone)]
-        public async Task<IActionResult> DeleteBox([FromBody] int id)
+        public async Task<IActionResult> DeleteBox(int id)
         {
             var command = new DeleteBoxCommand
             {
-                BoxId = id
+                Id = id
             };
             await Mediator.Send(command);
-            return NoContent();
+            return Ok();
         }
     }
 }

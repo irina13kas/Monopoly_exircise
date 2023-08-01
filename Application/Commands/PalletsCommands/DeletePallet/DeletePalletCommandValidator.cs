@@ -7,7 +7,7 @@ namespace Application.Commands.PalletsCommands.DeletePallet
         public DeletePalletCommandValidator()
         {
             RuleFor(deletePalletCommand =>
-                deletePalletCommand.PalletId).NotEqual(0).GreaterThan(0);
+                deletePalletCommand.Id).NotEqual(0).GreaterThan(0);
         }
     }
 }

@@ -12,13 +12,13 @@ namespace Application.Commands.PalletsCommands.UpdatePallet
         public UpdatePalletCommandValidator()
         {
             RuleFor(updatePalletCommand =>
-                updatePalletCommand.PalletId).NotEmpty().GreaterThan(0);
+                updatePalletCommand.Id).NotEmpty().GreaterThan(0);
             RuleFor(updatePalletCommand =>
-                updatePalletCommand.PalletHeight).NotEmpty().GreaterThan(0);
+                updatePalletCommand.Height).NotEmpty().GreaterThan(0);
             RuleFor(updatePalletCommand =>
-                updatePalletCommand.PalletWidth).NotEmpty().GreaterThan(0);
+                updatePalletCommand.Width).NotEmpty().GreaterThan(0);
             RuleFor(updatePalletCommand =>
-                updatePalletCommand.PalletDepth).NotEmpty().GreaterThan(0);
+                updatePalletCommand.Depth).NotEmpty().GreaterThan(0);
         }
     }
 }

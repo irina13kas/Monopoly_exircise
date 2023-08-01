@@ -17,15 +17,8 @@ namespace Application.Commands.Vm.PalletVm
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Pallet, PalletVm>()
-                .ForMember(palletVm => palletVm.Height,
-                    opt => opt.MapFrom(pallet => pallet.Height))
-                .ForMember(palletVm => palletVm.Width,
-                    opt => opt.MapFrom(pallet => pallet.Width))
-                .ForMember(palletVm => palletVm.Depth,
-                    opt => opt.MapFrom(pallet => pallet.Depth))
-                .ForMember(palletVm => palletVm.Id,
-                    opt => opt.MapFrom(pallet => pallet.Id));
+            profile.CreateMap<Pallet, PalletVm>();
+            profile.CreateMap<Pallet, PalletLookupDto>();
         }
     }
 }

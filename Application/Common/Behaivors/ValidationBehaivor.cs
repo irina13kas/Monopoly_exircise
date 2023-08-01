@@ -41,7 +41,6 @@ namespace Application.Common.Behaivors
                 throw new ValidationException(failures);
             }
             return next();
-            //throw new NotImplementedException();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Application;
+using Application.Commands.Vm.PalletVm;
 using Application.Common.Mappings;
 using DbStorageContext;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 
@@ -21,6 +21,7 @@ namespace StorageWebApi
             {
                 config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
                 config.AddProfile(new AssemblyMappingProfile(typeof(StorageDbContext).Assembly));
+                config.AddProfile(new AssemblyMappingProfile(typeof(PalletVm).Assembly));
             });
             services.AddApplication();
             services.AddPersistance(Configuration);
@@ -54,7 +55,6 @@ namespace StorageWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-            //app.UseExceptionHandler();
             
             app.UseSwagger();
             app.UseSwaggerUI(config =>

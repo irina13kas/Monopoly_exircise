@@ -7,7 +7,7 @@ namespace Application.Commands.BoxesCommands.DeleteBox
         public DeleteBoxCommandValidator()
         {
             RuleFor(deleteBoxCommand =>
-                deleteBoxCommand.BoxId).NotEmpty().GreaterThan(0);
+                deleteBoxCommand.Id).NotEmpty().GreaterThan(0);
         }
     }
 }

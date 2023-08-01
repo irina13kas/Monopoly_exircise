@@ -13,28 +13,21 @@ namespace Application.Commands.PalletsCommands.UpdatePallet
         public UpdatePalletCommandHandler(StorageDbContext dbContext) =>
             _dbContext = dbContext;
 
-        public async Task<Unit> Handle(UpdatePalletCommand request, CancellationToken cancellationToken)
+        async Task IRequestHandler<UpdatePalletCommand>.Handle(UpdatePalletCommand request, CancellationToken cancellationToken)
         {
-            //проверить, что, если палета уже создана, то добавлять ее второй раз не надо
             var pallet =
                 await _dbContext.Pallets.FirstOrDefaultAsync(pallet =>
-                    pallet.Id == request.PalletId, cancellationToken);
+                    pallet.Id == request.Id, cancellationToken);
             if (pallet == null)
             {
-                throw new NotFoundException(nameof(Pallet), request.PalletId);
+                throw new NotFoundException(nameof(Pallet), request.Id);
             }
-            pallet.Height = request.PalletHeight;
-            pallet.Width = request.PalletWidth;
-            pallet.Depth = request.PalletDepth;
+            pallet.Height = request.Height;
+            pallet.Width = request.Width;
+            pallet.Depth = request.Depth;
 
             await _dbContext.SaveChangesAsync();
-
-            return Unit.Value;
         }
 
-        Task IRequestHandler<UpdatePalletCommand>.Handle(UpdatePalletCommand request, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

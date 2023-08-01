@@ -4,22 +4,22 @@ namespace Application.Commands.BoxesCommands.CreateBox
 {
     public class CreateBoxCommandValidator : AbstractValidator<CreateBoxCommand>
     {
-        //добавить проверку на соответствие параметров коробки в паллету
+        private readonly DateTime TodayConst=DateTime.Today;
         public CreateBoxCommandValidator()
         {
             RuleFor(createBoxCommand =>
-                createBoxCommand.BoxHeight).NotEmpty().GreaterThan(0);
+                createBoxCommand.Height).NotEmpty().GreaterThan(0);
             RuleFor(createBoxCommand =>
-                createBoxCommand.BoxWidth).NotEmpty().GreaterThan(0);
+                createBoxCommand.Width).NotEmpty().GreaterThan(0);
             RuleFor(createBoxCommand =>
-                createBoxCommand.BoxDepth).NotEmpty().GreaterThan(0);
+                createBoxCommand.Depth).NotEmpty().GreaterThan(0);
             RuleFor(createBoxCommand =>
-               createBoxCommand.BoxWeight).NotEmpty().GreaterThan(0);
+               createBoxCommand.Weight).NotEmpty().GreaterThan(0);
             RuleFor(createBoxCommand =>
-                createBoxCommand.BoxExpiryDate).NotEmpty();
+                createBoxCommand.ExpiryDate).NotEmpty();
             RuleFor(createBoxCommand =>
-                createBoxCommand.BoxDateOfProduction).NotNull()
-                    .When(createBoxCommand => createBoxCommand.BoxExpiryDate == null);
+                createBoxCommand.DateOfProduction).NotNull()
+                    .When(createBoxCommand => createBoxCommand.ExpiryDate == null).LessThan(DateOnly.FromDateTime(TodayConst));
             RuleFor(createBoxCommand => createBoxCommand.PalletId).NotNull().GreaterThan(0);
         }
     }

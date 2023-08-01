@@ -14,21 +14,33 @@ namespace Application.Commands.BoxesCommands.UpdateBox
             _dbContext = dbContext;
         }
 
-        public async Task<Unit> Handle(UpdateBoxCommand request, CancellationToken cancellationToken)
+        async Task IRequestHandler<UpdateBoxCommand>.Handle(UpdateBoxCommand request, CancellationToken cancellationToken)
         {
-            var box = _dbContext.Boxes
-                .FirstOrDefaultAsync(box => box.Id == request.BoxId, cancellationToken);
+            var box = await _dbContext.Boxes
+                .FirstOrDefaultAsync(box => box.Id == request.Id, cancellationToken);
             if (box == null)
             {
-                throw new NotFoundException(nameof(Box), request.BoxId);
+                throw new NotFoundException(nameof(Box), request.Id);
             }
-
-            return Unit.Value;
+            if (!CheckParametrs(box.Height, box.Width, box.PalletId))
+            {
+                throw new ArgumentException("Box's parametrs bigger than pallet");
+            }
+            await _dbContext.SaveChangesAsync();
         }
 
-        Task IRequestHandler<UpdateBoxCommand>.Handle(UpdateBoxCommand request, CancellationToken cancellationToken)
+        private bool CheckParametrs(decimal height, decimal width, int palletId)
         {
-            throw new NotImplementedException();
+            var pallet = _dbContext.Pallets.FirstOrDefault(p => p.Id == palletId);
+            if (pallet == null)
+            {
+                throw new NullReferenceException("No such pallet");
+            }
+            if (pallet.Height >= height && pallet.Width <= width || pallet.Width <= height && pallet.Height <= width)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
