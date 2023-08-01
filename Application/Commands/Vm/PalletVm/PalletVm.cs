@@ -18,7 +18,6 @@ namespace Application.Commands.Vm.PalletVm
         public void Mapping(Profile profile)
         {
             profile.CreateMap<Pallet, PalletVm>();
-            profile.CreateMap<Pallet, PalletLookupDto>();
         }
     }
 }

@@ -9,14 +9,16 @@ namespace Application.Commands.PalletsCommands.DeletePallet
     {
         private readonly StorageDbContext _dbContext;
 
-        public DeletePalletCommandHandler(StorageDbContext dbInitializer) =>
-            _dbContext = dbInitializer;
+        public DeletePalletCommandHandler(StorageDbContext dbContext) =>
+            _dbContext = dbContext;
 
         async Task IRequestHandler<DeletePalletCommand>.Handle(DeletePalletCommand request,
             CancellationToken cancellationToken)
         {
             var pallet = await _dbContext.Pallets
                 .FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
+            var boxesToRemove = await _dbContext.Boxes.Where(b => b.PalletId == pallet.Id).ToListAsync();
+            _dbContext.Boxes.RemoveRange(boxesToRemove);
             if (pallet == null)
             {
                 throw new NotFoundException(nameof(Pallet), request.Id);

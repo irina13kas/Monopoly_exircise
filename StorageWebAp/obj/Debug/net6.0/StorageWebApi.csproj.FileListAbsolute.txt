@@ -82,7 +82,6 @@ C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\n
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.AssemblyInfoInputs.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.AssemblyInfo.cs
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.csproj.CoreCompileInputs.cache
-C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\StorageWebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\staticwebassets\msbuild.StorageWebApi.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\irina.kasianova\source\repos\Monopoly_exircise\StorageWebAp\obj\Debug\net6.0\staticwebassets\msbuild.build.StorageWebApi.props

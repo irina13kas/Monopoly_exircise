@@ -6,6 +6,5 @@ namespace DbStorageContext
     {
         public DbSet<Pallet> Pallets { get; set; }
         public DbSet<Box> Boxes { get; set; }
-        Task<int> SaveChangesAsync(CancellationToken cancellation);
     }
 }
