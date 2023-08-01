@@ -1,6 +1,8 @@
 ﻿using Application;
+using Application.Commands.Vm.PalletVm;
 using Application.Common.Mappings;
 using DbStorageContext;
+using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 namespace StorageWebApi
@@ -18,12 +20,24 @@ namespace StorageWebApi
             services.AddAutoMapper(config =>
             {
                 config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
-                config.AddProfile(new AssemblyMappingProfile(typeof(DbInitializer).Assembly));
+                config.AddProfile(new AssemblyMappingProfile(typeof(StorageDbContext).Assembly));
+                config.AddProfile(new AssemblyMappingProfile(typeof(PalletVm).Assembly));
             });
             services.AddApplication();
             services.AddPersistance(Configuration);
             services.AddControllers();
-            //4 доступ должен быть ограничен
+            services.AddSwaggerGen(options =>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                options.IncludeXmlComments(xmlPath);
+
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Storage.WebApi",
+                    Version = "v1"
+                });
+            });
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", policy =>
@@ -41,9 +55,16 @@ namespace StorageWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.RoutePrefix = string.Empty;
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "Storage API");
+            });
+
             app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseCors("AllowAll");
 
             app.UseEndpoints(endpoints =>
             {

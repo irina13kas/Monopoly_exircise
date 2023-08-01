@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StorageWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:StorageWebApi.Controllers.BoxController.GetAllBoxes(System.Int32)">
+            <summary>
+            get all boxes from pallet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.BoxController.GetBox(System.Int32)">
+            <summary>
+            get information about some box by id
+            </summary>
+            <param name="id"></param>
+            <param name="palletId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.BoxController.CreateBox(StorageWebApi.Models.Box.CreateBoxDto)">
+            <summary>
+            create box in some pallet
+            </summary>
+            <param name="createBoxDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.BoxController.UpdateBox(StorageWebApi.Models.Box.UpdateBoxDto)">
+            <summary>
+            update information about some box by id
+            </summary>
+            <param name="updateBoxDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.BoxController.DeleteBox(System.Int32)">
+            <summary>
+            delete box by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.GetAllPallets">
+            <summary>
+            Get all exist pallets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.GetPalletsWithPagination(System.Int32,System.Int32)">
+            <summary>
+            Get list of pallets with pagination
+            </summary>
+            <param name="limit"></param>
+            <param name="offset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.GetPallet(System.Int32)">
+            <summary>
+            get information about some pallet
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.CreatePallet(StorageWebApi.Models.Pallet.CreatePalletDto)">
+            <summary>
+            create new pallet
+            </summary>
+            <param name="createPalletDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.UpdatePallet(StorageWebApi.Models.Pallet.UpdatePalletDto)">
+            <summary>
+            update information about some pallet by id
+            </summary>
+            <param name="updatePalletDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StorageWebApi.Controllers.PalletController.DeletePallet(System.Int32)">
+            <summary>
+            delete some pallet by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

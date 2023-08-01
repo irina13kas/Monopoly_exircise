@@ -5,10 +5,10 @@ namespace BusinessLogic
 {
     public class Calculation 
     {
-        private readonly DbInitializer db;
+        private readonly StorageDbContext db;
         public Calculation()
         {
-            db = new DbInitializer();
+            db = new StorageDbContext();
         }
 
         public async Task<Dictionary<DateOnly,List<Pallet>>> SortPallets()

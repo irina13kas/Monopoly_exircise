@@ -48,7 +48,6 @@
                     box.ExpiryDate = (new DateOnly(2020, 10, 1)).AddDays(rdm.Next(730));
                 }
                 boxes.Add(box);
-                //Pallets[palletId-1].Boxes.Add(box);
             }
             return boxes;
         }

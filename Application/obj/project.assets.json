@@ -18,6 +18,36 @@
           }
         }
       },
+      "FluentValidation/11.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.6.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.6.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.1.1": {
         "type": "package",
         "dependencies": {
@@ -720,6 +750,21 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DbStorageContext": "1.0.0",
+          "FileStorageContex": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
+      },
       "DbStorageContext/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -735,6 +780,22 @@
         },
         "runtime": {
           "bin/placeholder/DbStorageContext.dll": {}
+        }
+      },
+      "FileStorageContex/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.9",
+          "Model": "1.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/FileStorageContex.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileStorageContex.dll": {}
         }
       },
       "Model/1.0.0": {
@@ -766,6 +827,46 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "FluentValidation/11.6.0": {
+      "sha512": "DWKd0jHA33d7BXVWytSoN5Oafj9nYuiLUyyFoaUboOZZiaN5tlXdcJpkRbmrrWBUTWdSxjTwIoyUs38KSU/7OQ==",
+      "type": "package",
+      "path": "fluentvalidation/11.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.6.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.6.0": {
+      "sha512": "3jyyy5VMzKsdGNzfBKtEYX3fd3YzSSzd7JEq7uJcqjqqkoCexT4khgTlNT8upXOeU6mT1MSW7H7OjvUG9W1bRw==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.6.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "MediatR/12.1.1": {
@@ -1734,10 +1835,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
+    },
     "DbStorageContext/1.0.0": {
       "type": "project",
       "path": "../FileStorage/DbStorageContext.csproj",
       "msbuildProject": "../FileStorage/DbStorageContext.csproj"
+    },
+    "FileStorageContex/1.0.0": {
+      "type": "project",
+      "path": "../FileStorage/FileStorageContex.csproj",
+      "msbuildProject": "../FileStorage/FileStorageContex.csproj"
     },
     "Model/1.0.0": {
       "type": "project",
@@ -1748,7 +1859,10 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
+      "BusinessLogic >= 1.0.0",
       "DbStorageContext >= 1.0.0",
+      "FluentValidation >= 11.6.0",
+      "FluentValidation.DependencyInjectionExtensions >= 11.6.0",
       "MediatR >= 12.1.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
       "Model >= 1.0.0"
@@ -1787,6 +1901,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\BusinessLogic\\BusinessLogic.csproj"
+            },
             "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj": {
               "projectPath": "C:\\Users\\irina.kasianova\\source\\repos\\Monopoly_exircise\\FileStorage\\DbStorageContext.csproj"
             },
@@ -1809,6 +1926,14 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.6.0, )"
+          },
+          "FluentValidation.DependencyInjectionExtensions": {
+            "target": "Package",
+            "version": "[11.6.0, )"
           },
           "MediatR": {
             "target": "Package",

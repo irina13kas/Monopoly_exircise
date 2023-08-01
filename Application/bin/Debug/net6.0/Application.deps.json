@@ -9,7 +9,10 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "BusinessLogic": "1.0.0",
           "DbStorageContext": "1.0.0",
+          "FluentValidation": "11.6.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.6.0",
           "MediatR": "12.1.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Model": "1.0.0"
@@ -26,6 +29,26 @@
           "lib/netstandard2.1/AutoMapper.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/11.6.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.6.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.6.0": {
+        "dependencies": {
+          "FluentValidation": "11.6.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.6.0.0"
           }
         }
       },
@@ -509,6 +532,16 @@
           }
         }
       },
+      "BusinessLogic/1.0.0": {
+        "dependencies": {
+          "DbStorageContext": "1.0.0",
+          "FileStorageContex": "1.0.0",
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "BusinessLogic.dll": {}
+        }
+      },
       "DbStorageContext/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.9",
@@ -543,6 +576,20 @@
       "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
       "path": "automapper/12.0.1",
       "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
+    "FluentValidation/11.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DWKd0jHA33d7BXVWytSoN5Oafj9nYuiLUyyFoaUboOZZiaN5tlXdcJpkRbmrrWBUTWdSxjTwIoyUs38KSU/7OQ==",
+      "path": "fluentvalidation/11.6.0",
+      "hashPath": "fluentvalidation.11.6.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3jyyy5VMzKsdGNzfBKtEYX3fd3YzSSzd7JEq7uJcqjqqkoCexT4khgTlNT8upXOeU6mT1MSW7H7OjvUG9W1bRw==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.6.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.6.0.nupkg.sha512"
     },
     "MediatR/12.1.1": {
       "type": "package",
@@ -795,6 +842,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DbStorageContext/1.0.0": {
       "type": "project",
